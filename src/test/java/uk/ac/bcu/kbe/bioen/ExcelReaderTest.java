@@ -3,6 +3,7 @@ package uk.ac.bcu.kbe.bioen;
 import org.junit.Test;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
+import uk.ac.bcu.kbe.bioen.model.ExcelReader;
 
 import static org.junit.Assert.assertEquals;
 
