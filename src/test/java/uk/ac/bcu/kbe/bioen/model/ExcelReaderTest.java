@@ -34,7 +34,7 @@ public class ExcelReaderTest {
 
     @Test
     public void testCellValue() throws IOException {
-       assertEquals("Krishna Sapkota",new  ExcelReader(filename).getCellValue(0,5,0));
+       assertEquals("Krishna Sapkota", new ExcelReader(filename).getCellValue(0, 5, 0));
     }
 
     @Test
@@ -44,6 +44,25 @@ public class ExcelReaderTest {
        assertEquals(4,new  ExcelReader(filename).convertLettersToInteger("E"));
        assertEquals(26,new  ExcelReader(filename).convertLettersToInteger("aa"));
        assertEquals(27,new  ExcelReader(filename).convertLettersToInteger("ab"));
+    }
+    @Test
+    public void testSplitCellId() throws IOException {
+        ExcelReader reader = new ExcelReader(filename);
+        String[] cell1 = reader.splitCellId("e5");
+        String[] cell2 = reader.splitCellId("Ae10");
+        assertEquals("e", cell1[0]);
+        assertEquals("5", cell1[1]);
+        assertEquals("Ae", cell2[0]);
+        assertEquals("10", cell2[1]);
+    }
+
+    @Test
+    public void testCellValueWithCellId() throws IOException {
+        ExcelReader reader =  new ExcelReader(filename);
+        assertEquals("Name", reader.getCellValue(0, "a4"));
+        assertEquals("Krishna Sapkota", reader.getCellValue(0, "a5"));
+        assertEquals("Email", reader.getCellValue(0, "d4"));
+        assertEquals("ks_21285@hotmail.com", reader.getCellValue(0, "d5"));
     }
 
 

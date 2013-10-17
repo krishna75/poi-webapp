@@ -57,7 +57,18 @@ public class ExcelReader {
         return  getValue(cell);
     }
 
-    public int convertLettersToInteger(String letters) {
+    public String getCellValue(int sheetIndex, String cellId) {
+        String[] splittedId = splitCellId(cellId);
+        int row = Integer.parseInt(splittedId[1]);
+        int col = convertLettersToInteger(splittedId[0]);
+        return getCellValue(sheetIndex, row, col);
+    }
+
+    String[] splitCellId(String cellId) {
+        return  cellId.split("(?<=\\p{L})(?=\\d)") ;
+    }
+
+     int convertLettersToInteger(String letters) {
         int index = 0;
         char[] alphabets = "abcdefghijklmnopqrstuvwxyz".toCharArray();
         char[] chars = letters.toLowerCase().toCharArray();

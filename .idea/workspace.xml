@@ -3,14 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="f97d80ea-37bd-4c6c-9986-60f804109998" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/ExcelReader.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/ExcelReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/ExcelReaderTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/ExcelReaderTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\Dropbox\Krishna\Birmingham\code\bioen\src\test\java\uk\ac\bcu\kbe\bioen\ExcelReaderTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/ExcelReaderTest.java" />
     </list>
     <ignored path="bioen.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1381940335460" ignored="false" />
-    <file path="/ExcelReader.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382007276848" ignored="false" />
-    <file path="/ExcelReaderTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382004817736" ignored="false" />
+    <file path="/Dummy.txt" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382007341665" ignored="false" />
+    <file path="/ExcelReader.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382008555556" ignored="false" />
+    <file path="/ExcelReaderTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382008815287" ignored="false" />
     <file path="/fragment.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382004732452" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,10 +72,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ExcelReader.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ExcelReader.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/ExcelReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="23" selection-start="2182" selection-end="2182" vertical-scroll-proportion="0.66972476">
+            <state line="59" column="26" selection-start="1748" selection-end="1748" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExcelReaderTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ExcelReaderTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/ExcelReaderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.0">
+            <state line="59" column="34" selection-start="2055" selection-end="2055" vertical-scroll-proportion="0.66972476">
               <folding />
             </state>
           </provider>
@@ -121,8 +121,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/ExcelReaderTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/ExcelReaderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/ExcelReader.java" />
+        <option value="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/ExcelReaderTest.java" />
       </list>
     </option>
   </component>
@@ -456,29 +456,7 @@
       <recent name="uk.ac.bcu.kbe.bioen.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExcelReaderTest.testConvertLettersToInteger">
-    <configuration default="false" name="ExcelReaderTest.testGetSomething" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="bioen" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="uk.ac.bcu.kbe.bioen.model" />
-      <option name="MAIN_CLASS_NAME" value="uk.ac.bcu.kbe.bioen.model.ExcelReaderTest" />
-      <option name="METHOD_NAME" value="testGetSomething" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ExcelReaderTest.testCellValueWithCellId">
     <configuration default="false" name="ExcelReaderTest.testGetRowValues" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="bioen" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -548,6 +526,50 @@
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ExcelReaderTest.testSplitCellId" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="bioen" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="uk.ac.bcu.kbe.bioen.model" />
+      <option name="MAIN_CLASS_NAME" value="uk.ac.bcu.kbe.bioen.model.ExcelReaderTest" />
+      <option name="METHOD_NAME" value="testSplitCellId" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ExcelReaderTest.testCellValueWithCellId" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="bioen" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="uk.ac.bcu.kbe.bioen.model" />
+      <option name="MAIN_CLASS_NAME" value="uk.ac.bcu.kbe.bioen.model.ExcelReaderTest" />
+      <option name="METHOD_NAME" value="testCellValueWithCellId" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -661,18 +683,20 @@
       <patterns />
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testGetSomething" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testGetRowValues" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testCellValue" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testConvertLettersToInteger" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testGetRowValues" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testCellValue" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testConvertLettersToInteger" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testSplitCellId" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testCellValueWithCellId" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testConvertLettersToInteger" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testCellValue" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testGetRowValues" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testGetSomething" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testCellValueWithCellId" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testSplitCellId" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testConvertLettersToInteger" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testCellValue" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testGetRowValues" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -716,7 +740,11 @@
       <created>1381940353481</created>
       <updated>1381940353481</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="converts  letters to index">
+      <created>1382007346234</created>
+      <updated>1382007346234</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -787,7 +815,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="getting a cell's value" />
+    <option name="LAST_COMMIT_MESSAGE" value="converts  letters to index" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -804,6 +832,7 @@
     <MESSAGE value="fixed issues - had problem with automatically importing maven libraries" />
     <MESSAGE value="testing a values of a row" />
     <MESSAGE value="getting a cell's value" />
+    <MESSAGE value="converts  letters to index" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -827,19 +856,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/ExcelReaderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/ExcelReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="23" selection-start="2182" selection-end="2182" vertical-scroll-proportion="0.66972476">
+        <state line="59" column="26" selection-start="1748" selection-end="1748" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/ExcelReaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="34" selection-start="2055" selection-end="2055" vertical-scroll-proportion="0.66972476">
+          <folding />
         </state>
       </provider>
     </entry>
