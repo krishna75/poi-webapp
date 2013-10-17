@@ -57,6 +57,23 @@ public class ExcelReader {
         return  getValue(cell);
     }
 
+    public int convertLettersToInteger(String letters) {
+        int index = 0;
+        char[] alphabets = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+        char[] chars = letters.toLowerCase().toCharArray();
+
+        int count = 0;
+        for (char aChar : chars) {
+            for (int i = 0; i < 26; i++) {
+                if (aChar == alphabets[i]) {
+                    index = index + count + i;
+                }
+            }
+            count += 26;
+        }
+        return index;
+    }
+
     private String getValue(Cell cell) {
         String cellValue = "";
         if (cell != null) {

@@ -1,4 +1,4 @@
-package uk.ac.bcu.kbe.bioen;
+package uk.ac.bcu.kbe.bioen.model;
 
 import com.google.common.collect.Lists;
 import org.junit.Test;
@@ -35,6 +35,15 @@ public class ExcelReaderTest {
     @Test
     public void testCellValue() throws IOException {
        assertEquals("Krishna Sapkota",new  ExcelReader(filename).getCellValue(0,5,0));
+    }
+
+    @Test
+    public void testConvertLettersToInteger() throws IOException {
+       assertEquals(0,new  ExcelReader(filename).convertLettersToInteger("A"));
+       assertEquals(0,new  ExcelReader(filename).convertLettersToInteger("a"));
+       assertEquals(4,new  ExcelReader(filename).convertLettersToInteger("E"));
+       assertEquals(26,new  ExcelReader(filename).convertLettersToInteger("aa"));
+       assertEquals(27,new  ExcelReader(filename).convertLettersToInteger("ab"));
     }
 
 
