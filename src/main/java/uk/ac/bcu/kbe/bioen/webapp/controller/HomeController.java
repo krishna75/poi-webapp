@@ -22,7 +22,7 @@ public class HomeController{
 
     @RequestMapping(value="/hello",method = RequestMethod.GET)
     public String printHello(ModelMap model) {
-        model.addAttribute("message", "Hello Spring MVC Framework!");
+        model.addAttribute("message", "Bio-Gas FIT Calculator");
 
         return "hello";
     }

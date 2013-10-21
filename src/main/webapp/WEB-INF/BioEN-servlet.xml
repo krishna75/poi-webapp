@@ -14,6 +14,9 @@
     <mvc:annotation-driven/>
     <context:component-scan base-package="uk.ac.bcu.kbe.bioen"/>
 
+    <!-- the mvc resources tag does the magic -->
+    <mvc:resources mapping="/resources/**" location="/resources/" />
+
     <!-- Resolve jsp's -->
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/views/"/>
