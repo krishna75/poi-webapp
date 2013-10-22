@@ -19,23 +19,18 @@ public class BiogasModel {
 
     private org.slf4j.Logger log = LoggerFactory.getLogger(this.getClass());
 
+    //input variables
     int numCows;
     int area;
+
+    //output variables
     int biogas;
     int engergy;
 
     public BiogasModel() {
     }
 
-    public BiogasModel(int numCows, int area, int biogas, int engergy) {
-        this.numCows = numCows;
-        this.area = area;
-        this.biogas = biogas;
-        this.engergy = engergy;
-    }
-
-    public BiogasModel(String jsonString) {
-
+    public void setInput(String jsonString) {
 
     }
 

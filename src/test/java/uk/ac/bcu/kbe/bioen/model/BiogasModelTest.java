@@ -18,10 +18,10 @@ public class BiogasModelTest {
 
     @Test
     public void testStringToMap() throws Exception {
-        String jsonString = "{\"biogas\":\"205\",\"energy\":\"300\"}";
+        String jsonString = "{\"cows\":\"205\",\"area\":\"300\"}";
         BiogasModel model = new BiogasModel();
         JSONObject json = model.stringToMap(jsonString);
-        assertEquals("205",json.get("biogas"));
+        assertEquals("205",json.get("cows"));
 
     }
 }
