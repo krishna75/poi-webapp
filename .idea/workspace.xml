@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f97d80ea-37bd-4c6c-9986-60f804109998" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/BiogasModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp" />
-      <change type="DELETED" beforePath="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\webapp\WEB-INF\views\hello.jsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bioen.iml" afterPath="$PROJECT_DIR$/bioen.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bioen.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382436524749" ignored="false" />
+    <file path="/Dummy.txt" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382451319430" ignored="false" />
     <file path="/ExcelReader.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382008555556" ignored="false" />
     <file path="/ExcelReaderTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382008815287" ignored="false" />
     <file path="/fragment.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382004732452" ignored="false" />
@@ -25,13 +19,13 @@
     <file path="$USER_HOME$/Downloads/maven-jetty-spring-slf4j-demo/src/main/java/sk/upjs/ics/novotnyr/mjss/WebInitializer.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382028556417" ignored="false" />
     <file path="$USER_HOME$/Downloads/maven-jetty-spring-slf4j-demo/src/main/java/sk/upjs/ics/novotnyr/mjss/WebApplicationContext.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382028556417" ignored="false" />
     <file path="/web-context.xml" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382030877061" ignored="false" />
-    <file path="/HomeController.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382449397036" ignored="false" />
+    <file path="/HomeController.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382453072574" ignored="false" />
     <file path="/hello.jsp" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382444440076" ignored="false" />
     <file path="/BiogasFitCalculator.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382438073340" ignored="false" />
     <file path="$PROJECT_DIR$/../../../regcmantic/src/main/java/uk/ac/brookes/regcmantic/rcm/main/Main.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382436666351" ignored="false" />
     <file path="/BioEN-servlet.xml" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382441435291" ignored="false" />
     <file path="/BiogasModel.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382445016031" ignored="false" />
-    <file path="/biogas-calculator.jsp" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382451237851" ignored="false" />
+    <file path="/biogas-calculator.jsp" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382453154855" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +89,7 @@
       <file leaf-file-name="HomeController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="99" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.0">
+            <state line="37" column="19" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -122,7 +116,7 @@
       <file leaf-file-name="biogas-calculator.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="81" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.51704544">
+            <state line="65" column="70" selection-start="1630" selection-end="1630" vertical-scroll-proportion="0.49289772">
               <folding />
             </state>
           </provider>
@@ -871,7 +865,11 @@
       <created>1382371357703</created>
       <updated>1382371357703</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="initial implementation of jquery ajax send and receive json data">
+      <created>1382451327152</created>
+      <updated>1382451327152</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -943,7 +941,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="introduced a jquery based slider" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial implementation of jquery ajax send and receive json data" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -963,6 +961,7 @@
     <MESSAGE value="converts  letters to index" />
     <MESSAGE value="working spring web mvc and jetty" />
     <MESSAGE value="introduced a jquery based slider" />
+    <MESSAGE value="initial implementation of jquery ajax send and receive json data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1035,9 +1034,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/BiogasModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="99" selection-start="1226" selection-end="1226" vertical-scroll-proportion="0.0">
+        <state line="37" column="19" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1049,16 +1055,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/BiogasModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="81" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.51704544">
+        <state line="65" column="70" selection-start="1630" selection-end="1630" vertical-scroll-proportion="0.49289772">
           <folding />
         </state>
       </provider>

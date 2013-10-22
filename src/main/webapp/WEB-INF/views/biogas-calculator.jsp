@@ -48,6 +48,7 @@
        <input id="area-slider" type="text" data-slider="true" data-slider-range="11,2000">
 
        <hr/>
+       Test: <span id="test" class="output"> 0 </span> <br/>
        Biogas: <span id="biogas" class="output"> 0 </span>
        Engergy: <span id="energy" class="output">0 </span>
 
@@ -64,20 +65,20 @@
     });
 
     function update(){
-        var newJsonString = '{"biogas":"200","energy":"300"}';
+        var newJsonString = '{"biogas":"205","energy":"300"}';
 
-       $.ajax({
-         url:"http://localhost:8080/bioen%20Spring-WS%20Application/biogas-json",
-         type:"POST",
-         data:newJsonString,
-         contentType:"application/json; charset=utf-8",
-         dataType:"json",
-         success: function(data){
-            var biogasJson = jQuery.parseJSON( data );
-                   $("#biogas").text( biogasJson.biogas);
-                   $("#energy").text( biogasJson.energy);
-         }
-       })
+         $.ajax({
+             url:"http://localhost:8080/bioen%20Spring-WS%20Application/biogas-json",
+             type:"POST",
+             data:newJsonString,
+             contentType:"application/json; charset=utf-8",
+         })
+         .done(function(outputData){
+            $("#test").text( outputData);
+            var biogasJson = jQuery.parseJSON( outputData );
+            $("#biogas").text( biogasJson.biogas);
+            $("#energy").text( biogasJson.energy);
+         });
 
     }
 
