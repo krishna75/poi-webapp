@@ -57,12 +57,12 @@ public class ExcelReaderTest {
 
     @Test
     public void testSetCellValue() throws IOException {
-        assertEquals("Name", reader.getCellValue(0, "a5"));
-        assertEquals("Krishna Sapkota", reader.getCellValue(0, "a6"));
-        assertEquals("Email", reader.getCellValue(0, "d5"));
-        assertEquals("ks_21285@hotmail.com", reader.getCellValue(0, "d6"));
-    }
+        reader.setCellValue(0, "a1", "test");
+        reader.setCellValue(0, "b1", "100");
 
+        assertEquals("test", reader.getCellValue(0, "a1"));
+        assertEquals("100", reader.getCellValue(0, "b1"));
+    }
 
 
     /* Tests for conversions */
@@ -85,7 +85,6 @@ public class ExcelReaderTest {
         assertEquals("Ae", cell2[0]);
         assertEquals("10", cell2[1]);
     }
-
 
 
     private boolean contains(List<String> list1, List<String> list2) {
