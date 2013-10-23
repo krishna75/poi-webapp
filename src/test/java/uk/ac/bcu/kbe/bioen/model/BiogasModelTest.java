@@ -20,7 +20,8 @@ public class BiogasModelTest {
         BiogasModel model = new BiogasModel();
         JSONObject json = model.stringToMap(jsonString);
         assertEquals("205", json.get("num-cows"));
-        assertEquals("2", model.getBiogas());
+        assertEquals("4.64", model.getBiogas());
+        assertEquals("162725", model.getEnergy());
     }
 
 

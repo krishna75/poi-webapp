@@ -21,8 +21,6 @@ public class BiogasModel {
     private org.slf4j.Logger log = LoggerFactory.getLogger(this.getClass());
 
     //input variables
-//    private String filename = this.getClass().getClassLoader().getResource("biogas-fit-calculator-v-1-0.1.xlsm").getFile();
-//    private String filename = this.getClass().getClassLoader().getResource("test.txt").getFile();
     private String filename = this.getClass().getClassLoader().getResource("biogas-fit-calculator.txt").getFile();
     ExcelReader excelReader;
     int numCows;
@@ -52,4 +50,7 @@ public class BiogasModel {
         return excelReader.getCellValue(0, "d74");
     }
 
+     String getEnergy() {
+        return excelReader.getCellValue(0,"d50");
+    }
 }

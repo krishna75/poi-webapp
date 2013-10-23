@@ -96,6 +96,10 @@ public class ExcelReader {
                 case Cell.CELL_TYPE_STRING:
                     cellValue = cell.getStringCellValue();
                     break;
+                case Cell.CELL_TYPE_FORMULA:
+
+                    cellValue = String.valueOf(Double.valueOf(cell.getNumericCellValue()).intValue());
+                    break;
             }
         }
         return cellValue;
