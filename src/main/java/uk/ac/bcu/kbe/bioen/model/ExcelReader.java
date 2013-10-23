@@ -117,8 +117,16 @@ public class ExcelReader {
                     cellValue = cell.getStringCellValue();
                     break;
                 case Cell.CELL_TYPE_FORMULA:
-
                     cellValue = String.valueOf(Double.valueOf(cell.getNumericCellValue()).intValue());
+                    break;
+                case Cell.CELL_TYPE_BOOLEAN:
+                    cellValue = Boolean.toString(cell.getBooleanCellValue());
+                    break;
+                case Cell.CELL_TYPE_BLANK:
+                    cellValue = "";
+                    break;
+                case Cell.CELL_TYPE_ERROR:
+                    cellValue = "";
                     break;
             }
         }
