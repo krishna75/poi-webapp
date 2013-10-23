@@ -52,6 +52,7 @@ public class ExcelReader {
     }
 
     public String getCellValue(int sheetIndex, int rowIndex, int columnIndex) {
+        rowIndex -= 1;
         XSSFSheet sheet = workbook.getSheetAt(sheetIndex);
         Cell cell = sheet.getRow(rowIndex).getCell(columnIndex);
         return  getValue(cell);
