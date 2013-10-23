@@ -3,8 +3,6 @@ package uk.ac.bcu.kbe.bioen.model;
 import org.json.simple.JSONObject;
 import org.junit.Test;
 
-import java.util.Map;
-
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -18,10 +16,12 @@ public class BiogasModelTest {
 
     @Test
     public void testStringToMap() throws Exception {
-        String jsonString = "{\"cows\":\"205\",\"area\":\"300\"}";
+        String jsonString = "{\"num-cows\":\"205\",\"area\":\"300\"}";
         BiogasModel model = new BiogasModel();
         JSONObject json = model.stringToMap(jsonString);
-        assertEquals("205",json.get("cows"));
-
+        assertEquals("205", json.get("num-cows"));
+        assertEquals("2", model.getBiogas());
     }
+
+
 }
