@@ -2,6 +2,7 @@ package uk.ac.bcu.kbe.bioen.model;
 
 import org.json.simple.JSONObject;
 import org.junit.Test;
+import uk.ac.bcu.kbe.bioen.webapp.controller.HomeController;
 
 import static org.junit.Assert.assertEquals;
 
@@ -22,6 +23,14 @@ public class BiogasModelTest {
         assertEquals("205", json.get("num-cows"));
         assertEquals("4.64", model.getBiogas());
         assertEquals("162725", model.getEnergy());
+    }
+
+    @Test
+    public void testGetOutput() throws Exception {
+       BiogasModel controller = new BiogasModel();
+        String output = controller.getOutput();
+        assertEquals("{\"biogas\":\"4.64\",\"energy\":\"162725\"}", output);
+
     }
 
 

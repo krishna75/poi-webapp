@@ -17,7 +17,7 @@ public class HomeControllerTest {
     public void testPrintText() throws Exception {
        HomeController controller = new HomeController();
         String output = controller.printText("");
-        assertEquals("", output);
+        assertEquals("{\"biogas\":\"4.64\",\"energy\":\"162725\"}", output);
 
     }
 }

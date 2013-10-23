@@ -46,11 +46,11 @@ public class BiogasModel {
     }
 
     public String getOutput() {
-//        JSONObject map = new JSONObject();
-//        map.put("biogas", getOutput());
-//        map.put("energy", getEnergy());
-//        return map.toJSONString();
-        return "{\"biogas\":\""+getBiogas()+"\",\"energy\":\""+getEnergy()+"\"}";
+        JSONObject map = new JSONObject();
+        map.put("biogas", getBiogas());
+        map.put("energy", getEnergy());
+
+        return map.toJSONString();
     }
 
     String getBiogas() {
