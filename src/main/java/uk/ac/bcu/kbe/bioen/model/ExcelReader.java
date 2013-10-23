@@ -52,18 +52,25 @@ public class ExcelReader {
     }
 
     public String getCellValue(int sheetIndex, int rowIndex, int columnIndex) {
-        rowIndex -= 1;
-        XSSFSheet sheet = workbook.getSheetAt(sheetIndex);
-        Cell cell = sheet.getRow(rowIndex).getCell(columnIndex);
-        return  getValue(cell);
+        return  getValue(getCell(sheetIndex,rowIndex,columnIndex));
     }
 
     public String getCellValue(int sheetIndex, String cellId) {
-        String[] splittedId = splitCellId(cellId);
-        int row = Integer.parseInt(splittedId[1]);
-        int col = convertLettersToInteger(splittedId[0]);
-        return getCellValue(sheetIndex, row, col);
+        return getValue(getCell(sheetIndex, cellId));
     }
+
+    public void setCellValue(int sheetIndex, int rowIndex, int colIndex, String value) {
+        Cell cell = getCell(sheetIndex, rowIndex,colIndex);
+        cell.setCellValue(value);
+    }
+
+    public void setCellValue(int sheetIndex, String cellId, String value) {
+        Cell cell = getCell(sheetIndex, cellId);
+        cell.setCellValue(value);
+    }
+
+    /* Non public stuff */
+
 
     String[] splitCellId(String cellId) {
         return  cellId.split("(?<=\\p{L})(?=\\d)") ;
@@ -86,6 +93,19 @@ public class ExcelReader {
         return index;
     }
 
+    private Cell getCell(int sheetIndex, String cellId) {
+        String[] splittedId = splitCellId(cellId);
+        int row = Integer.parseInt(splittedId[1]);
+        int col = convertLettersToInteger(splittedId[0]);
+        return getCell(sheetIndex, row, col);
+    }
+
+    private Cell getCell(int sheetIndex, int rowIndex, int columnIndex) {
+        rowIndex -= 1;
+        XSSFSheet sheet = workbook.getSheetAt(sheetIndex);
+        return sheet.getRow(rowIndex).getCell(columnIndex);
+    }
+
     private String getValue(Cell cell) {
         String cellValue = "";
         if (cell != null) {
@@ -104,4 +124,5 @@ public class ExcelReader {
         }
         return cellValue;
     }
+
 }

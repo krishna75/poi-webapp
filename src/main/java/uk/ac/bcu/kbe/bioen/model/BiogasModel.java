@@ -1,6 +1,7 @@
 package uk.ac.bcu.kbe.bioen.model;
 
 import com.google.common.collect.Maps;
+import com.google.gson.Gson;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -41,9 +42,15 @@ public class BiogasModel {
     }
 
     JSONObject stringToMap(String jsonString) throws ParseException {
-        Map<String, String> map = Maps.newHashMap();
-        JSONObject json = (JSONObject) new JSONParser().parse(jsonString);
-        return json;
+        return (JSONObject) new JSONParser().parse(jsonString);
+    }
+
+    public String getOutput() {
+//        JSONObject map = new JSONObject();
+//        map.put("biogas", getOutput());
+//        map.put("energy", getEnergy());
+//        return map.toJSONString();
+        return "{\"biogas\":\""+getBiogas()+"\",\"energy\":\""+getEnergy()+"\"}";
     }
 
     String getBiogas() {
@@ -51,6 +58,6 @@ public class BiogasModel {
     }
 
      String getEnergy() {
-        return excelReader.getCellValue(0,"d50");
+        return excelReader.getCellValue(0, "d50");
     }
 }

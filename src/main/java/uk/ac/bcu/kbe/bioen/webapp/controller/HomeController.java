@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
+import uk.ac.bcu.kbe.bioen.model.BiogasModel;
 
+import java.io.IOException;
 import java.util.logging.Logger;
 
 /**
@@ -23,6 +25,11 @@ import java.util.logging.Logger;
 
 public class HomeController{
     private org.slf4j.Logger log = LoggerFactory.getLogger(this.getClass());
+    private BiogasModel model;
+
+    public HomeController() throws IOException {
+        model = new BiogasModel();
+    }
 
     @RequestMapping(value="/biogas-calculator",method = RequestMethod.GET)
     public String printHello(ModelMap model) {
@@ -33,9 +40,11 @@ public class HomeController{
 
     @RequestMapping(value="/biogas-json",method = RequestMethod.POST)
     @ResponseBody
-    public String printText(@RequestBody String json) {
-        log.info(json);
-        return json;
+    public String printText(@RequestBody String input) {
+        log.info("input: "+ input);
+        String output =  model.getOutput();
+        log.info("output: "+ output);
+        return output;
     }
 
 
