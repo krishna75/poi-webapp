@@ -30,7 +30,7 @@ public class BiogasModelTest {
        BiogasModel model = new BiogasModel();
        model.setInput("{\"num-cows\":\"200\",\"area\":\"300\"}");
        String output = model.getOutput();
-       assertEquals("{\"biogas\":\"4.64\",\"energy\":\"162725\"}", output);
+       assertEquals("{\"biogas\":\"4.64\",\"energy\":\"2122416\n\"}", output);
 
     }
 

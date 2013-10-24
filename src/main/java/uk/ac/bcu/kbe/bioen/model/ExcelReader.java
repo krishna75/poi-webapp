@@ -2,11 +2,9 @@ package uk.ac.bcu.kbe.bioen.model;
 
 
 import com.google.common.collect.Lists;
-import org.apache.poi.hssf.util.CellReference;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.FormulaEvaluator;
 import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.slf4j.Logger;
@@ -29,6 +27,7 @@ public class ExcelReader {
     private Logger log = LoggerFactory.getLogger(this.getClass());
     private  XSSFWorkbook workbook;
     private final String filename;
+    private FileInputStream fileInputStream;
 
     public ExcelReader(String filename) throws IOException {
         this.filename = filename;
@@ -36,16 +35,33 @@ public class ExcelReader {
     }
 
     XSSFWorkbook process(String filename) throws IOException {
-        FileInputStream file = new FileInputStream(new File(filename));
-        return new XSSFWorkbook(file);
+        log.info("opening file : "+ filename);
+        fileInputStream =   new FileInputStream(new File(filename));
+        return new XSSFWorkbook(fileInputStream);
     }
 
     public void update() throws IOException {
+
+        fileInputStream.close();
+
         // Write the output to a file
-        FileOutputStream fileOut = new FileOutputStream(filename);
-        workbook.write(fileOut);
-        fileOut.close();
-        workbook = new XSSFWorkbook(new FileInputStream(filename));
+        FileOutputStream fileOutputStream = new FileOutputStream(new File(filename));
+        workbook.write(fileOutputStream);
+        fileOutputStream.close();
+        fileInputStream =   new FileInputStream(new File(filename));
+        workbook = new XSSFWorkbook(fileInputStream);
+
+        FormulaEvaluator evaluator = workbook.getCreationHelper().createFormulaEvaluator();
+        for(int sheetNum = 0; sheetNum < workbook.getNumberOfSheets(); sheetNum++) {
+            XSSFSheet sheet = workbook.getSheetAt(sheetNum);
+            for(Row r : sheet) {
+                for(Cell c : r) {
+                    if(c.getCellType() == Cell.CELL_TYPE_FORMULA) {
+                        evaluator.evaluateFormulaCell(c);
+                    }
+                }
+            }
+        }
     }
 
     public List<String> getRowValues(int sheetIndex, int rowIndex) {
@@ -69,14 +85,14 @@ public class ExcelReader {
         return getValue(getCell(sheetIndex, cellId));
     }
 
-    public void setCellValue(int sheetIndex, int rowIndex, int colIndex, String value) {
+    public void setCellValue(int sheetIndex, int rowIndex, int colIndex, int value) {
         Cell cell = getCell(sheetIndex, rowIndex,colIndex);
         cell.setCellValue(value);
     }
 
-    public void setCellValue(int sheetIndex, String cellId, String value) {
+    public void setCellValue(int sheetIndex, String cellId, int value) {
+        log.info("seeting cell value: "+value+" for cell "+cellId);
         Cell cell = getCell(sheetIndex, cellId);
-//        cell.setCellValue(Integer.valueOf(value));
         cell.setCellValue(value);
     }
 

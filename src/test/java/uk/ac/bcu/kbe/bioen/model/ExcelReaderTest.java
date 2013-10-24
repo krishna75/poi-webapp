@@ -57,11 +57,11 @@ public class ExcelReaderTest {
 
     @Test
     public void testSetCellValue() throws IOException {
-        reader.setCellValue(0, "a1", "test");
-        reader.setCellValue(0, "b1", "100");
+        reader.setCellValue(0, "a1", 1);
+        reader.setCellValue(0, "b1", 100);
 
-        assertEquals("test", reader.getCellValue(0, "a1"));
-        assertEquals("100", reader.getCellValue(0, "b1"));
+        assertEquals(1, reader.getCellValue(0, "a1"));
+        assertEquals(100, reader.getCellValue(0, "b1"));
     }
 
 

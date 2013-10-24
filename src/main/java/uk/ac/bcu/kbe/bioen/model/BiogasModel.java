@@ -19,7 +19,7 @@ public class BiogasModel {
     private org.slf4j.Logger log = LoggerFactory.getLogger(this.getClass());
 
     //input variables
-    private String filename = this.getClass().getClassLoader().getResource("biogas-fit-calculator.xlsm").getFile();
+    private String filename = this.getClass().getClassLoader().getResource("biogas-test.xlsx").getFile();
     ExcelReader excelReader;
     int numCows;
     int area;
@@ -33,14 +33,18 @@ public class BiogasModel {
     }
 
     public void setInput(String jsonString) throws ParseException {
+
         JSONObject jsonObject = stringToMap(jsonString);
         numCows = Integer.parseInt(jsonObject.get("num-cows").toString());
         area = Integer.parseInt(jsonObject.get("area").toString());
-        excelReader.setCellValue(0,"d4",String.valueOf(numCows));
-        excelReader.setCellValue(0,"d5",String.valueOf(numCows));
+
+        log.info("processing values "+ numCows+" and " + area);
+        excelReader.setCellValue(0,"d5",numCows);
+        excelReader.setCellValue(0,"d6",area);
     }
 
     JSONObject stringToMap(String jsonString) throws ParseException {
+        log.info("parsing string to json : "+jsonString);
         return (JSONObject) new JSONParser().parse(jsonString);
     }
 
@@ -57,10 +61,10 @@ public class BiogasModel {
     }
 
     String getBiogas() {
-        return excelReader.getCellValue(0, "d74");
+        return excelReader.getCellValue(0, "d10");
     }
 
      String getEnergy() {
-        return excelReader.getCellValue(0, "d50");
+        return excelReader.getCellValue(0, "d11");
     }
 }
