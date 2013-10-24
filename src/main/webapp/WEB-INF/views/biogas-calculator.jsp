@@ -55,17 +55,24 @@
   </div>
 
    <script>
+    var  cows = 1;
+    var  area = 1;
     $("#cow-slider").bind("slider:changed", function (event, data) {
+     cows = data.value;
      $("#cow-value").text(data.value.toFixed(0));
      update();
     });
 
     $("#area-slider").bind("slider:changed", function (event, data) {
+     area = data.value;
      $("#area-value").text(data.value.toFixed(0));
+     update();
     });
 
     function update(){
-        var newJsonString = '{"cows":"205","area":"300"}';
+        cows = parseInt(cows);
+        area = parseInt(area);
+        var newJsonString = '{"cows":'+cows+',"area":'+area+'}';
 
          $.ajax({
              url:"http://localhost:8080/bioen%20Spring-WS%20Application/biogas-json",

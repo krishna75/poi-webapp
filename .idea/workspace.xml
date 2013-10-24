@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f97d80ea-37bd-4c6c-9986-60f804109998" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/InputBiogasModel.java" />
-      <change type="DELETED" beforePath="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\java\uk\ac\bcu\kbe\bioen\model\BiogasModel.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/service/BiogasManager.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/service/BiogasManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/dao/ExcelReader.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/dao/ExcelReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bioen.iml" afterPath="$PROJECT_DIR$/bioen.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bioen.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382608857384" ignored="false" />
+    <file path="/Dummy.txt" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382612163344" ignored="false" />
     <file path="/ExcelReader.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382609665425" ignored="false" />
     <file path="/ExcelReaderTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382538978232" ignored="false" />
     <file path="/fragment.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382608826722" ignored="false" />
@@ -31,7 +25,7 @@
     <file path="$PROJECT_DIR$/../../../regcmantic/src/main/java/uk/ac/brookes/regcmantic/rcm/main/Main.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382436666351" ignored="false" />
     <file path="/BioEN-servlet.xml" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382441435291" ignored="false" />
     <file path="/BiogasModel.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382611023936" ignored="false" />
-    <file path="/biogas-calculator.jsp" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382611873112" ignored="false" />
+    <file path="/biogas-calculator.jsp" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382612749172" ignored="false" />
     <file path="/BiogasModelTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382542536004" ignored="false" />
     <file path="/HomeControllerTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382596815362" ignored="false" />
     <file path="/BiogasManager.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382612100014" ignored="false" />
@@ -95,64 +89,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BiogasManager.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/service/BiogasManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="74" selection-start="887" selection-end="887" vertical-scroll-proportion="0.44061303">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BiogasManagerTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/service/BiogasManagerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="50" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InputBiogasModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/InputBiogasModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="29" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="13" selection-start="1552" selection-end="1552" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeControllerTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="64" selection-start="494" selection-end="494" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="biogas-calculator.jsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="biogas-calculator.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="48" selection-start="1702" selection-end="1702" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExcelReader.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/dao/ExcelReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="34" selection-start="2129" selection-end="2129" vertical-scroll-proportion="0.0">
+            <state line="68" column="35" selection-start="1722" selection-end="1722" vertical-scroll-proportion="0.52274925">
               <folding />
             </state>
           </provider>
@@ -189,10 +129,10 @@
         <option value="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/service/BiogasManagerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/BiogasModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/InputBiogasModel.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/dao/ExcelReader.java" />
         <option value="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/service/BiogasManager.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp" />
       </list>
     </option>
   </component>
@@ -1026,7 +966,11 @@
       <created>1382608863039</created>
       <updated>1382608863039</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="first working web app. works with updating the excel file">
+      <created>1382612169369</created>
+      <updated>1382612169369</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1044,11 +988,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295562" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32766762" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24944812" sideWeight="0.16241738" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24944812" sideWeight="0.30217186" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1727373" sideWeight="0.53729934" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24944812" sideWeight="0.37393767" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46270066" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24944812" sideWeight="0.69688386" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46270066" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1285872" sideWeight="0.68932956" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1098,7 +1042,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="organisation of classes as dao, service and model" />
+    <option name="LAST_COMMIT_MESSAGE" value="first working web app. works with updating the excel file" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1132,6 +1076,7 @@
     <MESSAGE value="tidy up and attempt to update workbook on update on some cells&#10;" />
     <MESSAGE value="works with updating the sheet, but the web app throws null pointer exception&#10;&#10;" />
     <MESSAGE value="organisation of classes as dao, service and model" />
+    <MESSAGE value="first working web app. works with updating the excel file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1197,14 +1142,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="13" selection-start="1552" selection-end="1552" vertical-scroll-proportion="0.0">
+        <state line="46" column="13" selection-start="1552" selection-end="1552" vertical-scroll-proportion="0.5924492">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/InputBiogasModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="29" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
+        <state line="13" column="29" selection-start="285" selection-end="285" vertical-scroll-proportion="0.21393998">
           <folding />
         </state>
       </provider>
@@ -1212,13 +1157,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/dao/ExcelReaderTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="72" column="29" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.42337164">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="48" selection-start="1702" selection-end="1702" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1232,21 +1170,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/service/BiogasManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="50" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0">
+        <state line="22" column="50" selection-start="674" selection-end="674" vertical-scroll-proportion="0.2962246">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="64" selection-start="494" selection-end="494" vertical-scroll-proportion="0.0">
+        <state line="18" column="64" selection-start="494" selection-end="494" vertical-scroll-proportion="0.26331076">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/service/BiogasManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="74" selection-start="887" selection-end="887" vertical-scroll-proportion="0.44061303">
+        <state line="32" column="74" selection-start="887" selection-end="887" vertical-scroll-proportion="0.22727273">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="35" selection-start="1722" selection-end="1722" vertical-scroll-proportion="0.52274925">
           <folding />
         </state>
       </provider>
