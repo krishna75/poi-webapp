@@ -21,7 +21,7 @@ $("#area-slider").bind("slider:changed", function (event, data) {
 /* Sends and receives info from server in json format*/
 function update(){
      $.ajax({
-         url:"http://localhost:8080/bioen%20Spring-WS%20Application/biogas-json",
+         url:"biogas-json",
          type:"POST",
          data:getInputJson(),
          contentType:"application/json; charset=utf-8",

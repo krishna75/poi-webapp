@@ -6,7 +6,7 @@
     <artifactId>bioen</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>bioen Spring-WS Application</name>
+    <name>bioen</name>
     <url>http://www.springframework.org/spring-ws</url>
 
     <properties>
