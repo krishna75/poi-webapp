@@ -1,17 +1,24 @@
+/* Input variables */
 var  cows = 1;
 var  area = 1;
+
+
+/* Events and actions */
 $("#cow-slider").bind("slider:changed", function (event, data) {
- cows = data.value;
- $("#cow-value").text(data.value.toFixed(0));
- update();
+     cows = data.value;
+     $("#cow-value").text(data.value.toFixed(0));
+     update();
 });
+
 
 $("#area-slider").bind("slider:changed", function (event, data) {
- area = data.value;
- $("#area-value").text(data.value.toFixed(0));
- update();
+     area = data.value;
+     $("#area-value").text(data.value.toFixed(0));
+     update();
 });
 
+
+/* Sends and receives info from server in json format*/
 function update(){
      $.ajax({
          url:"http://localhost:8080/bioen%20Spring-WS%20Application/biogas-json",
@@ -28,7 +35,7 @@ function update(){
 }
 
 
-
+/* Creates json object */
 function getInputJson(){
     var mapArray = [
         new Map("cows",parseInt(cows)),
@@ -49,18 +56,12 @@ function getInputJson(){
 }
 
 
-
+/* Class Map */
 function Map(key,value){
     this.key = key;
     this.value = value;
     this.getKey = getMapKey;
     this.getValue = getMapValue;
 }
-
-function getMapKey(){
-    return this.key;
-}
-
-function getMapValue(){
-   return  this.value;
-}
+function getMapKey(){return this.key;}
+function getMapValue(){ return  this.value;}
