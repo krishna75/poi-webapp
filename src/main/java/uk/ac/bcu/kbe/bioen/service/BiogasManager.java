@@ -1,11 +1,13 @@
 package uk.ac.bcu.kbe.bioen.service;
 
+import com.google.gson.Gson;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import uk.ac.bcu.kbe.bioen.dao.ExcelReader;
+import uk.ac.bcu.kbe.bioen.model.InputBiogasModel;
 
 import java.io.IOException;
 
@@ -23,26 +25,21 @@ public class BiogasManager {
     //input variables
     private String filename = this.getClass().getClassLoader().getResource("biogas-test.xlsx").getFile();
     ExcelReader excelReader;
-    int numCows;
-    int area;
 
-    //output variables
-    int biogas;
-    int engergy;
 
     public BiogasManager() throws IOException {
         excelReader = new ExcelReader(filename);
     }
 
     public void setInput(String jsonString) throws ParseException {
-//        Gson gson = new Gson();
-//        gson.toJson(jsonString , Map);
-//        log.info(" gson  = "+ g.ge);
+        log.info("parsing string to json : "+jsonString);
 
-        JSONObject jsonObject = stringToMap(jsonString);
-        numCows = Integer.parseInt(jsonObject.get("num-cows").toString());
-        area = Integer.parseInt(jsonObject.get("area").toString());
+        Gson gson = new Gson();
+        InputBiogasModel model = gson.fromJson(jsonString , InputBiogasModel.class);
+        log.info(" gson  = "+ model.getCows()+", "+model.getArea());
 
+        int numCows = Integer.parseInt(model.getCows());
+        int area = Integer.parseInt(model.getArea());
         log.info("processing values "+ numCows+" and " + area);
         excelReader.setCellValue(0,"d5",numCows);
         excelReader.setCellValue(0,"d6",area);

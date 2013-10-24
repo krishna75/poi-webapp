@@ -65,7 +65,7 @@
     });
 
     function update(){
-        var newJsonString = '{"biogas":"205","energy":"300"}';
+        var newJsonString = '{"cows":"205","area":"300"}';
 
          $.ajax({
              url:"http://localhost:8080/bioen%20Spring-WS%20Application/biogas-json",

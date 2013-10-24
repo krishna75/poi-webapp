@@ -16,8 +16,8 @@ public class HomeControllerTest {
     @Test
     public void testGetBiogasJson() throws Exception {
        HomeController controller = new HomeController();
-        String output = controller.getBiogasJson("{\"num-cows\":\"10\",\"area\":\"10\"}");
-        assertEquals("{\"biogas\":\"4.64\",\"energy\":\"2122416\"}", output);
+        String output = controller.getBiogasJson("{\"cows\":\"20\",\"area\":\"20\"}");
+        assertEquals("{\"biogas\":\"20\",\"energy\":\"100\"}", output);
 
     }
 }

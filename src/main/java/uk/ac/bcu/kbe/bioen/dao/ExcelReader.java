@@ -42,14 +42,14 @@ public class ExcelReader {
 
     public void update() throws IOException {
 
-        fileInputStream.close();
-
-        // Write the output to a file
-        FileOutputStream fileOutputStream = new FileOutputStream(new File(filename));
-        workbook.write(fileOutputStream);
-        fileOutputStream.close();
-        fileInputStream =   new FileInputStream(new File(filename));
-        workbook = new XSSFWorkbook(fileInputStream);
+//        fileInputStream.close();
+//
+//        // Write the output to a file
+//        FileOutputStream fileOutputStream = new FileOutputStream(new File(filename));
+//        workbook.write(fileOutputStream);
+//        fileOutputStream.close();
+//        fileInputStream =   new FileInputStream(new File(filename));
+//        workbook = new XSSFWorkbook(fileInputStream);
 
         FormulaEvaluator evaluator = workbook.getCreationHelper().createFormulaEvaluator();
         for(int sheetNum = 0; sheetNum < workbook.getNumberOfSheets(); sheetNum++) {
@@ -62,6 +62,7 @@ public class ExcelReader {
                 }
             }
         }
+//        fileInputStream.close();
     }
 
     public List<String> getRowValues(int sheetIndex, int rowIndex) {
