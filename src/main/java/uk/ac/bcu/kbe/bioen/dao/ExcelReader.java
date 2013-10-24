@@ -1,4 +1,4 @@
-package uk.ac.bcu.kbe.bioen.model;
+package uk.ac.bcu.kbe.bioen.dao;
 
 
 import com.google.common.collect.Lists;

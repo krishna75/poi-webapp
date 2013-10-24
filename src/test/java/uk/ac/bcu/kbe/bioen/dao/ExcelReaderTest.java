@@ -1,8 +1,9 @@
-package uk.ac.bcu.kbe.bioen.model;
+package uk.ac.bcu.kbe.bioen.dao;
 
 import com.google.common.collect.Lists;
 import org.junit.Before;
 import org.junit.Test;
+import uk.ac.bcu.kbe.bioen.dao.ExcelReader;
 
 import java.io.IOException;
 import java.util.List;

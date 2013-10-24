@@ -2,22 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f97d80ea-37bd-4c6c-9986-60f804109998" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/biogas-test.xlsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/biogas-fit-calculator.xlsm" afterPath="$PROJECT_DIR$/src/main/resources/biogas-fit-calculator.xlsm" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/BiogasModel.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/BiogasModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/BiogasModelTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/BiogasModelTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/ExcelReader.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/ExcelReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/ExcelReaderTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/ExcelReaderTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bioen.iml" afterPath="$PROJECT_DIR$/bioen.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\java\uk\ac\bcu\kbe\bioen\model\BiogasModel.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/service/BiogasManager.java" />
+      <change type="MOVED" beforePath="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\java\uk\ac\bcu\kbe\bioen\model\ExcelReader.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/dao/ExcelReader.java" />
+      <change type="MOVED" beforePath="D:\Dropbox\Krishna\Birmingham\code\bioen\src\test\java\uk\ac\bcu\kbe\bioen\model\BiogasModelTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/service/BiogasManagerTest.java" />
+      <change type="MOVED" beforePath="D:\Dropbox\Krishna\Birmingham\code\bioen\src\test\java\uk\ac\bcu\kbe\bioen\model\ExcelReaderTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/dao/ExcelReaderTest.java" />
     </list>
     <ignored path="bioen.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382596917605" ignored="false" />
+    <file path="/Dummy.txt" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382607505079" ignored="false" />
     <file path="/ExcelReader.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382607097154" ignored="false" />
     <file path="/ExcelReaderTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382538978232" ignored="false" />
-    <file path="/fragment.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382535917907" ignored="false" />
+    <file path="/fragment.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382608826722" ignored="false" />
     <file path="/web.xml" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382086649432" ignored="false" />
     <file path="$USER_HOME$/Documents/jetty-embedded-spring-mvc-master/jetty-embedded-spring-mvc-master/src/main/java/META-INF/webapp/WEB-INF/application-context.xml" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382021949173" ignored="false" />
     <file path="$USER_HOME$/Documents/jetty-embedded-spring-mvc-master/jetty-embedded-spring-mvc-master/src/main/java/META-INF/webapp/WEB-INF/web.xml" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382021949173" ignored="false" />
@@ -31,7 +30,7 @@
     <file path="/BiogasFitCalculator.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382438073340" ignored="false" />
     <file path="$PROJECT_DIR$/../../../regcmantic/src/main/java/uk/ac/brookes/regcmantic/rcm/main/Main.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382436666351" ignored="false" />
     <file path="/BioEN-servlet.xml" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382441435291" ignored="false" />
-    <file path="/BiogasModel.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382603676947" ignored="false" />
+    <file path="/BiogasModel.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382608390055" ignored="false" />
     <file path="/biogas-calculator.jsp" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382453154855" ignored="false" />
     <file path="/BiogasModelTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382542536004" ignored="false" />
     <file path="/HomeControllerTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382596815362" ignored="false" />
@@ -95,19 +94,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BiogasModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/BiogasModel.java">
+      <file leaf-file-name="BiogasManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/service/BiogasManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="47" selection-start="1904" selection-end="1904" vertical-scroll-proportion="0.0">
+            <state line="37" column="8" selection-start="971" selection-end="1076" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BiogasModelTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/BiogasModelTest.java">
+      <file leaf-file-name="BiogasManagerTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/service/BiogasManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="59" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.0">
+            <state line="21" column="31" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BiogasModel.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/BiogasModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="35" selection-start="222" selection-end="222" vertical-scroll-proportion="0.42337164">
               <folding />
             </state>
           </provider>
@@ -116,7 +124,7 @@
       <file leaf-file-name="HomeController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="13" selection-start="1659" selection-end="1659" vertical-scroll-proportion="0.0">
+            <state line="46" column="13" selection-start="1552" selection-end="1552" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -125,25 +133,25 @@
       <file leaf-file-name="HomeControllerTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="46" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
+            <state line="18" column="68" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ExcelReaderTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/ExcelReaderTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/dao/ExcelReaderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="24" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.0">
+            <state line="72" column="29" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExcelReader.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/ExcelReader.java">
+      <file leaf-file-name="ExcelReader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/dao/ExcelReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="77" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.24861878">
+            <state line="41" column="0" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -168,9 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/ui/BiogasCalculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/ui/BiogasCalculator.form" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/ui/BiogasFitCalculator.form" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/ui/BiogasFitCalculator.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/BioEN-servlet.xml" />
@@ -180,10 +185,13 @@
         <option value="$PROJECT_DIR$/src/test/resources/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/BiogasModelTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/ExcelReaderTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/BiogasModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/ExcelReader.java" />
+        <option value="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/BiogasManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/service/BiogasManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/service/BiogasManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/BiogasModel.java" />
       </list>
     </option>
   </component>
@@ -345,6 +353,96 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -460,7 +558,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -502,14 +660,18 @@
       <recent name="D:\Dropbox\Krishna\Birmingham\code\bioen\target\classes" />
       <recent name="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\resources" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="uk.ac.bcu.kbe.bioen.dao" />
+      <recent name="uk.ac.bcu.kbe.bioen.service" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.HomeControllerTest.testGetBiogasJson">
-    <configuration default="false" name="BiogasModelTest.testStringToMap" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="BiogasManagerTest.testStringToMap" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="bioen" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="uk.ac.bcu.kbe.bioen.model" />
-      <option name="MAIN_CLASS_NAME" value="uk.ac.bcu.kbe.bioen.model.BiogasModelTest" />
+      <option name="PACKAGE_NAME" value="uk.ac.bcu.kbe.bioen.service" />
+      <option name="MAIN_CLASS_NAME" value="uk.ac.bcu.kbe.bioen.service.BiogasManagerTest" />
       <option name="METHOD_NAME" value="testStringToMap" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -580,8 +742,8 @@
       <module name="bioen" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="uk.ac.bcu.kbe.bioen.model" />
-      <option name="MAIN_CLASS_NAME" value="uk.ac.bcu.kbe.bioen.model.ExcelReaderTest" />
+      <option name="PACKAGE_NAME" value="uk.ac.bcu.kbe.bioen.dao" />
+      <option name="MAIN_CLASS_NAME" value="uk.ac.bcu.kbe.bioen.dao.ExcelReaderTest" />
       <option name="METHOD_NAME" value="testSetCellValue" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -748,7 +910,7 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.BiogasFitCalculator" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BiogasModelTest.testStringToMap" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BiogasManagerTest.testStringToMap" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.HomeControllerTest.testPrintText" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.All in bioen" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testSetCellValue" />
@@ -760,7 +922,7 @@
         <item index="1" class="java.lang.String" itemvalue="JUnit.HomeControllerTest.testPrintText" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testSetCellValue" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.All in bioen" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BiogasModelTest.testStringToMap" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BiogasManagerTest.testStringToMap" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -847,7 +1009,11 @@
       <created>1382596926190</created>
       <updated>1382596926190</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="works with updating the sheet, but the web app throws null pointer exception&#10;&#10;">
+      <created>1382607511361</created>
+      <updated>1382607511361</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -869,7 +1035,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1727373" sideWeight="0.53729934" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24944812" sideWeight="0.37393767" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46270066" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46270066" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1285872" sideWeight="0.68932956" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -919,7 +1085,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="tidy up and attempt to update workbook on update on some cells&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="works with updating the sheet, but the web app throws null pointer exception&#10;&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -951,6 +1117,7 @@
     <MESSAGE value="some other types of cell values covered&#10;" />
     <MESSAGE value="now the getOutput works in the controller and the model&#10;" />
     <MESSAGE value="tidy up and attempt to update workbook on update on some cells&#10;" />
+    <MESSAGE value="works with updating the sheet, but the web app throws null pointer exception&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -960,11 +1127,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="42" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="0" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.0">
@@ -1015,20 +1177,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="13" selection-start="1659" selection-end="1659" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/BiogasModelTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="59" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1036,30 +1184,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/ExcelReaderTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/dao/ExcelReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="24" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.0">
+        <state line="41" column="0" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="13" selection-start="1552" selection-end="1552" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="46" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
+        <state line="18" column="68" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/service/BiogasManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="8" selection-start="971" selection-end="1076" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/service/BiogasManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="31" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/dao/ExcelReaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="29" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/BiogasModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="47" selection-start="1904" selection-end="1904" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/ExcelReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="77" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.24861878">
+        <state line="13" column="35" selection-start="222" selection-end="222" vertical-scroll-proportion="0.42337164">
           <folding />
         </state>
       </provider>

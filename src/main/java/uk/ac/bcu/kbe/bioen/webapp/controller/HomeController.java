@@ -1,6 +1,5 @@
 package uk.ac.bcu.kbe.bioen.webapp.controller;
 
-import com.google.gson.Gson;
 import org.json.simple.parser.ParseException;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -9,11 +8,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
-import uk.ac.bcu.kbe.bioen.model.BiogasModel;
+import uk.ac.bcu.kbe.bioen.service.BiogasManager;
 
 import java.io.IOException;
-import java.util.logging.Logger;
 
 /**
  * Created with IntelliJ IDEA.
@@ -26,10 +23,10 @@ import java.util.logging.Logger;
 
 public class HomeController{
     private org.slf4j.Logger log = LoggerFactory.getLogger(this.getClass());
-    private BiogasModel model;
+    private BiogasManager model;
 
     public HomeController() throws IOException {
-        model = new BiogasModel();
+        model = new BiogasManager();
     }
 
     @RequestMapping(value="/biogas-calculator",method = RequestMethod.GET)
