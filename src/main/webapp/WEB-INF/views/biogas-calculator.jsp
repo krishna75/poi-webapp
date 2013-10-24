@@ -10,6 +10,7 @@
 <link href="<c:url value='/resources/css/bootstrap.css' />" rel="stylesheet" type="text/css">
 
 <script src="<c:url value='/resources/js/jquery-1.10.2.js' />"></script>
+<script src="<c:url value='/resources/js/console.js' />"></script>
 
 <script src="<c:url value='/resources/js/simple-slider.js' />"></script>
 <link href="<c:url value='/resources/css/simple-slider.css' />" rel="stylesheet" type="text/css" />
@@ -53,42 +54,6 @@
        Engergy: <span id="energy" class="output">0 </span>
 
   </div>
-
-   <script>
-    var  cows = 1;
-    var  area = 1;
-    $("#cow-slider").bind("slider:changed", function (event, data) {
-     cows = data.value;
-     $("#cow-value").text(data.value.toFixed(0));
-     update();
-    });
-
-    $("#area-slider").bind("slider:changed", function (event, data) {
-     area = data.value;
-     $("#area-value").text(data.value.toFixed(0));
-     update();
-    });
-
-    function update(){
-        cows = parseInt(cows);
-        area = parseInt(area);
-        var newJsonString = '{"cows":'+cows+',"area":'+area+'}';
-
-         $.ajax({
-             url:"http://localhost:8080/bioen%20Spring-WS%20Application/biogas-json",
-             type:"POST",
-             data:newJsonString,
-             contentType:"application/json; charset=utf-8",
-         })
-         .done(function(outputData){
-            $("#test").text( outputData);
-            var biogasJson = jQuery.parseJSON( outputData );
-            $("#biogas").text( biogasJson.biogas);
-            $("#energy").text( biogasJson.energy);
-         });
-
-    }
-
-   </script>
+   <script src="<c:url value='/resources/js/biogas-calculator.js' />"></script>
 </body>
 </html>
