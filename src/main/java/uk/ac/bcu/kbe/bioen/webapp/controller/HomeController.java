@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import uk.ac.bcu.kbe.bioen.dao.ExcelReader;
 import uk.ac.bcu.kbe.bioen.service.BiogasManager;
 
 import java.io.IOException;
@@ -23,10 +24,12 @@ import java.io.IOException;
 
 public class HomeController{
     private org.slf4j.Logger log = LoggerFactory.getLogger(this.getClass());
-    private BiogasManager model;
+
+    private final String filename = this.getClass().getClassLoader().getResource("biogas-test.xlsx").getFile();
+    private BiogasManager manager;
 
     public HomeController() throws IOException {
-        model = new BiogasManager();
+        manager = new BiogasManager(new ExcelReader(filename));
     }
 
     @RequestMapping(value="/biogas-calculator",method = RequestMethod.GET)
@@ -40,9 +43,9 @@ public class HomeController{
     @ResponseBody
     public String getBiogasJson(@RequestBody String input) throws ParseException, IOException {
         log.info("input: "+ input);
-        model.setInput(input);
-        model.update();
-        String output =  model.getOutput();
+        manager.setInput(input);
+        manager.update();
+        String output =  manager.getOutput();
         log.info("output: "+ output);
         return output;
     }

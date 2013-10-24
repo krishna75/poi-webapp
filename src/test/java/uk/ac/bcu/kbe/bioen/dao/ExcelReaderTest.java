@@ -61,8 +61,8 @@ public class ExcelReaderTest {
         reader.setCellValue(0, "a1", 1);
         reader.setCellValue(0, "b1", 100);
 
-        assertEquals(1, reader.getCellValue(0, "a1"));
-        assertEquals(100, reader.getCellValue(0, "b1"));
+        assertEquals("1.0", reader.getCellValue(0, "a1"));
+        assertEquals("100.0", reader.getCellValue(0, "b1"));
     }
 
 

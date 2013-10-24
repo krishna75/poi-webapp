@@ -21,14 +21,10 @@ import java.io.IOException;
 public class BiogasManager {
 
     private Logger log = LoggerFactory.getLogger(this.getClass());
+    private final ExcelReader excelReader;
 
-    //input variables
-    private String filename = this.getClass().getClassLoader().getResource("biogas-test.xlsx").getFile();
-    ExcelReader excelReader;
-
-
-    public BiogasManager() throws IOException {
-        excelReader = new ExcelReader(filename);
+    public BiogasManager(ExcelReader excelReader) throws IOException {
+        this. excelReader = excelReader;
     }
 
     public void setInput(String jsonString) throws ParseException {
@@ -41,13 +37,8 @@ public class BiogasManager {
         int numCows = Integer.parseInt(model.getCows());
         int area = Integer.parseInt(model.getArea());
         log.info("processing values "+ numCows+" and " + area);
-        excelReader.setCellValue(0,"d5",numCows);
-        excelReader.setCellValue(0,"d6",area);
-    }
-
-    JSONObject stringToMap(String jsonString) throws ParseException {
-        log.info("parsing string to json : "+jsonString);
-        return (JSONObject) new JSONParser().parse(jsonString);
+        excelReader.setCellValue(0,"d4",numCows);
+        excelReader.setCellValue(0,"d5",area);
     }
 
     public void update() throws IOException {
@@ -63,10 +54,10 @@ public class BiogasManager {
     }
 
     String getBiogas() {
-        return excelReader.getCellValue(0, "d10");
+        return excelReader.getCellValue(0, "d74");
     }
 
      String getEnergy() {
-        return excelReader.getCellValue(0, "d11");
+        return excelReader.getCellValue(0, "d50");
     }
 }

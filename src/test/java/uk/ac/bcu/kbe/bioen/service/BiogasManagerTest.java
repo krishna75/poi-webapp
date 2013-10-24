@@ -1,8 +1,11 @@
 package uk.ac.bcu.kbe.bioen.service;
 
 import org.json.simple.JSONObject;
+import org.junit.Before;
 import org.junit.Test;
-import uk.ac.bcu.kbe.bioen.service.BiogasManager;
+import uk.ac.bcu.kbe.bioen.dao.ExcelReader;
+
+import java.io.IOException;
 
 import static org.junit.Assert.assertEquals;
 
@@ -14,23 +17,24 @@ import static org.junit.Assert.assertEquals;
  * To change this template use File | Settings | File Templates.
  */
 public class BiogasManagerTest {
+    BiogasManager manager;
+    @Before
+    public void initialize() throws IOException {
+        String filename = this.getClass().getClassLoader().getResource("biogas-test.xlsx").getFile();
+        manager = new BiogasManager(new ExcelReader(filename));
+    }
 
     @Test
-    public void testStringToMap() throws Exception {
-        String jsonString = "{\"num-cows\":\"200\",\"area\":\"300\"}";
-        BiogasManager model = new BiogasManager();
-        JSONObject json = model.stringToMap(jsonString);
-        assertEquals("200", json.get("num-cows"));
-        assertEquals("4.64", model.getBiogas());
-        assertEquals("162725", model.getEnergy());
+    public void testGetters() throws Exception {
+        assertEquals("20", manager.getBiogas());
+        assertEquals("100", manager.getEnergy());
     }
 
     @Test
     public void testGetOutput() throws Exception {
-       BiogasManager model = new BiogasManager();
-       model.setInput("{\"num-cows\":\"200\",\"area\":\"300\"}");
-       String output = model.getOutput();
-       assertEquals("{\"biogas\":\"4.64\",\"energy\":\"2122416\n\"}", output);
+       manager.setInput("{\"cows\":\"200\",\"area\":\"300\"}");
+       String output = manager.getOutput();
+       assertEquals("{\"biogas\":\"20\",\"energy\":\"100\"}", output);
 
     }
 
