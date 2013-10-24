@@ -2,16 +2,17 @@ package uk.ac.bcu.kbe.bioen.model;
 
 
 import com.google.common.collect.Lists;
+import org.apache.poi.hssf.util.CellReference;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.FormulaEvaluator;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.Iterator;
 import java.util.List;
 
@@ -26,9 +27,11 @@ import java.util.List;
 
 public class ExcelReader {
     private Logger log = LoggerFactory.getLogger(this.getClass());
-    private final XSSFWorkbook workbook;
+    private  XSSFWorkbook workbook;
+    private final String filename;
 
     public ExcelReader(String filename) throws IOException {
+        this.filename = filename;
         workbook = process(filename);
     }
 
@@ -37,6 +40,13 @@ public class ExcelReader {
         return new XSSFWorkbook(file);
     }
 
+    public void update() throws IOException {
+        // Write the output to a file
+        FileOutputStream fileOut = new FileOutputStream(filename);
+        workbook.write(fileOut);
+        fileOut.close();
+        workbook = new XSSFWorkbook(new FileInputStream(filename));
+    }
 
     public List<String> getRowValues(int sheetIndex, int rowIndex) {
         List<String>  rowValues = Lists.newArrayList();
@@ -66,6 +76,7 @@ public class ExcelReader {
 
     public void setCellValue(int sheetIndex, String cellId, String value) {
         Cell cell = getCell(sheetIndex, cellId);
+//        cell.setCellValue(Integer.valueOf(value));
         cell.setCellValue(value);
     }
 
@@ -107,11 +118,13 @@ public class ExcelReader {
     }
 
     private String getValue(Cell cell) {
+
+
         String cellValue = "";
         if (cell != null) {
             switch (cell.getCellType()) {
                 case Cell.CELL_TYPE_NUMERIC:
-                   cellValue= String.valueOf(cell.getNumericCellValue());
+                    cellValue = String.valueOf(cell.getNumericCellValue());
                     break;
                 case Cell.CELL_TYPE_STRING:
                     cellValue = cell.getStringCellValue();

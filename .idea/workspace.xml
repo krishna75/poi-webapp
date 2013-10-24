@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f97d80ea-37bd-4c6c-9986-60f804109998" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java" />
+    <list default="true" id="f97d80ea-37bd-4c6c-9986-60f804109998" name="Default" comment="now the getOutput works in the controller and the model&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/BiogasModel.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/BiogasModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/BiogasModelTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/BiogasModelTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/ExcelReader.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/ExcelReader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\resources\biogas-fit-calculator.txt" afterPath="$PROJECT_DIR$/src/main/resources/biogas-fit-calculator.xlsm" />
     </list>
     <ignored path="bioen.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382538677856" ignored="false" />
-    <file path="/ExcelReader.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382538057708" ignored="false" />
-    <file path="/ExcelReaderTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382538609351" ignored="false" />
+    <file path="/Dummy.txt" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382596601180" ignored="false" />
+    <file path="/ExcelReader.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382545335422" ignored="false" />
+    <file path="/ExcelReaderTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382538978232" ignored="false" />
     <file path="/fragment.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382535917907" ignored="false" />
     <file path="/web.xml" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382086649432" ignored="false" />
     <file path="$USER_HOME$/Documents/jetty-embedded-spring-mvc-master/jetty-embedded-spring-mvc-master/src/main/java/META-INF/webapp/WEB-INF/application-context.xml" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382021949173" ignored="false" />
@@ -22,15 +24,15 @@
     <file path="$USER_HOME$/Downloads/maven-jetty-spring-slf4j-demo/src/main/java/sk/upjs/ics/novotnyr/mjss/WebInitializer.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382028556417" ignored="false" />
     <file path="$USER_HOME$/Downloads/maven-jetty-spring-slf4j-demo/src/main/java/sk/upjs/ics/novotnyr/mjss/WebApplicationContext.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382028556417" ignored="false" />
     <file path="/web-context.xml" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382030877061" ignored="false" />
-    <file path="/HomeController.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382535727259" ignored="false" />
+    <file path="/HomeController.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382544299598" ignored="false" />
     <file path="/hello.jsp" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382444440076" ignored="false" />
     <file path="/BiogasFitCalculator.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382438073340" ignored="false" />
     <file path="$PROJECT_DIR$/../../../regcmantic/src/main/java/uk/ac/brookes/regcmantic/rcm/main/Main.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382436666351" ignored="false" />
     <file path="/BioEN-servlet.xml" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382441435291" ignored="false" />
-    <file path="/BiogasModel.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382536188229" ignored="false" />
+    <file path="/BiogasModel.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382544276553" ignored="false" />
     <file path="/biogas-calculator.jsp" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382453154855" ignored="false" />
-    <file path="/BiogasModelTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382532459031" ignored="false" />
-    <file path="/HomeControllerTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382536000144" ignored="false" />
+    <file path="/BiogasModelTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382542536004" ignored="false" />
+    <file path="/HomeControllerTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382596815362" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +96,7 @@
       <file leaf-file-name="BiogasModel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/BiogasModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="81" selection-start="1624" selection-end="1624" vertical-scroll-proportion="0.0">
+            <state line="31" column="107" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -103,7 +105,7 @@
       <file leaf-file-name="BiogasModelTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/BiogasModelTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="62" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
+            <state line="31" column="34" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -112,30 +114,26 @@
       <file leaf-file-name="HomeController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="24" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.0">
+            <state line="35" column="37" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeControllerTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="HomeControllerTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="14" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="23" column="36" selection-start="608" selection-end="608" vertical-scroll-proportion="0.69455254">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExcelReaderTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ExcelReaderTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/ExcelReaderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="43" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.4715026">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="58" column="20" selection-start="1701" selection-end="1701" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,7 +141,7 @@
       <file leaf-file-name="ExcelReader.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/ExcelReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="33" selection-start="1941" selection-end="1941" vertical-scroll-proportion="0.0">
+            <state line="46" column="24" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -177,13 +175,13 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/BiogasModelTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/src/test/resources/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/BiogasModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/ExcelReader.java" />
         <option value="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/ExcelReaderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/BiogasModelTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/ExcelReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/BiogasModel.java" />
+        <option value="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java" />
       </list>
     </option>
   </component>
@@ -574,7 +572,7 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="appearance" />
+    <property name="options.lastSelected" value="preferences.fileTypes" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -582,12 +580,12 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -597,7 +595,7 @@
       <recent name="uk.ac.bcu.kbe.bioen.webapp.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ExcelReaderTest">
+  <component name="RunManager" selected="JUnit.HomeControllerTest.testGetBiogasJson">
     <configuration default="false" name="BiogasModelTest.testStringToMap" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="bioen" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -606,50 +604,6 @@
       <option name="MAIN_CLASS_NAME" value="uk.ac.bcu.kbe.bioen.model.BiogasModelTest" />
       <option name="METHOD_NAME" value="testStringToMap" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="BiogasModelTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="bioen" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="uk.ac.bcu.kbe.bioen.model" />
-      <option name="MAIN_CLASS_NAME" value="uk.ac.bcu.kbe.bioen.model.BiogasModelTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ExcelReaderTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="bioen" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="uk.ac.bcu.kbe.bioen.model" />
-      <option name="MAIN_CLASS_NAME" value="uk.ac.bcu.kbe.bioen.model.ExcelReaderTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -682,18 +636,68 @@
       </option>
       <envs />
       <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in bioen" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="bioen" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="uk.ac.bcu.kbe.bioen.model in bioen" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="ExcelReaderTest.testSetCellValue" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="bioen" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="uk.ac.bcu.kbe.bioen.model" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="uk.ac.bcu.kbe.bioen.model.ExcelReaderTest" />
+      <option name="METHOD_NAME" value="testSetCellValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="HomeControllerTest.testGetBiogasJson" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="bioen" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="uk.ac.bcu.kbe.bioen.webapp.controller" />
+      <option name="MAIN_CLASS_NAME" value="uk.ac.bcu.kbe.bioen.webapp.controller.HomeControllerTest" />
+      <option name="METHOD_NAME" value="testGetBiogasJson" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -744,19 +748,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -782,6 +773,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -837,18 +841,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.BiogasFitCalculator" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.BiogasModelTest.testStringToMap" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BiogasModelTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.HomeControllerTest.testPrintText" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.uk.ac.bcu.kbe.bioen.model in bioen" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.HomeControllerTest.testPrintText" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.All in bioen" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testSetCellValue" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.HomeControllerTest.testGetBiogasJson" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.uk.ac.bcu.kbe.bioen.model in bioen" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.HomeControllerTest.testPrintText" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BiogasModelTest.testStringToMap" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BiogasModelTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.HomeControllerTest.testGetBiogasJson" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.HomeControllerTest.testPrintText" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ExcelReaderTest.testSetCellValue" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.All in bioen" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BiogasModelTest.testStringToMap" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -915,7 +919,23 @@
       <created>1382538674730</created>
       <updated>1382538674730</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="test for a controller method returning  json string">
+      <created>1382538736682</created>
+      <updated>1382538736682</updated>
+    </task>
+    <task id="LOCAL-00015" summary="test for setting values in excel">
+      <created>1382541645576</created>
+      <updated>1382541645576</updated>
+    </task>
+    <task id="LOCAL-00016" summary="some other types of cell values covered&#10;">
+      <created>1382541682656</created>
+      <updated>1382541682656</updated>
+    </task>
+    <task id="LOCAL-00017" summary="now the getOutput works in the controller and the model&#10;">
+      <created>1382541725967</created>
+      <updated>1382541725967</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -925,22 +945,22 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19227144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.07836644" sideWeight="0.68932956" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295562" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39943343" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295562" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24944812" sideWeight="0.22757319" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17108168" sideWeight="0.75354105" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24944812" sideWeight="0.15391879" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1727373" sideWeight="0.509915" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24944812" sideWeight="0.5259679" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24645892" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24944812" sideWeight="0.35505193" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49008498" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1285872" sideWeight="0.68932956" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295562" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -949,7 +969,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
@@ -987,7 +1007,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="tidy up" />
+    <option name="LAST_COMMIT_MESSAGE" value="now the getOutput works in the controller and the model&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1014,6 +1034,10 @@
     <MESSAGE value="fixed working with resources. the &quot;.xslm&quot; format was not recognized." />
     <MESSAGE value="evaluating the formula" />
     <MESSAGE value="tidy up" />
+    <MESSAGE value="test for a controller method returning  json string" />
+    <MESSAGE value="test for setting values in excel" />
+    <MESSAGE value="some other types of cell values covered&#10;" />
+    <MESSAGE value="now the getOutput works in the controller and the model&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1023,13 +1047,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="77" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="42" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" />
@@ -1078,54 +1095,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/BiogasModelTest.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_40/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="62" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="14" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/BiogasModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="81" selection-start="1624" selection-end="1624" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="24" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/ExcelReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="33" selection-start="1941" selection-end="1941" vertical-scroll-proportion="0.0">
+        <state line="491" column="0" selection-start="17855" selection-end="17855" vertical-scroll-proportion="0.3329098">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/ExcelReaderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="43" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.4715026">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="58" column="20" selection-start="1701" selection-end="1701" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/ExcelReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="24" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/model/BiogasModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="107" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/model/BiogasModelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="34" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="37" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="36" selection-start="608" selection-end="608" vertical-scroll-proportion="0.69455254">
+          <folding />
         </state>
       </provider>
     </entry>

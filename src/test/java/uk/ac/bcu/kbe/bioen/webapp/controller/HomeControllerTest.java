@@ -14,9 +14,9 @@ import static org.junit.Assert.assertEquals;
 public class HomeControllerTest {
 
     @Test
-    public void testPrintText() throws Exception {
+    public void testGetBiogasJson() throws Exception {
        HomeController controller = new HomeController();
-        String output = controller.printText("");
+        String output = controller.getBiogasJson("{\"num-cows\":\"200\",\"area\":\"10\"}");
         assertEquals("{\"biogas\":\"4.64\",\"energy\":\"162725\"}", output);
 
     }

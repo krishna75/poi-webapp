@@ -17,19 +17,20 @@ public class BiogasModelTest {
 
     @Test
     public void testStringToMap() throws Exception {
-        String jsonString = "{\"num-cows\":\"205\",\"area\":\"300\"}";
+        String jsonString = "{\"num-cows\":\"200\",\"area\":\"300\"}";
         BiogasModel model = new BiogasModel();
         JSONObject json = model.stringToMap(jsonString);
-        assertEquals("205", json.get("num-cows"));
+        assertEquals("200", json.get("num-cows"));
         assertEquals("4.64", model.getBiogas());
         assertEquals("162725", model.getEnergy());
     }
 
     @Test
     public void testGetOutput() throws Exception {
-       BiogasModel controller = new BiogasModel();
-        String output = controller.getOutput();
-        assertEquals("{\"biogas\":\"4.64\",\"energy\":\"162725\"}", output);
+       BiogasModel model = new BiogasModel();
+       model.setInput("{\"num-cows\":\"200\",\"area\":\"300\"}");
+       String output = model.getOutput();
+       assertEquals("{\"biogas\":\"4.64\",\"energy\":\"162725\"}", output);
 
     }
 

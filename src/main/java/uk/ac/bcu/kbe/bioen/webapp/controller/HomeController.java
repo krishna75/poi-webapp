@@ -1,6 +1,7 @@
 package uk.ac.bcu.kbe.bioen.webapp.controller;
 
 import com.google.gson.Gson;
+import org.json.simple.parser.ParseException;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -32,7 +33,7 @@ public class HomeController{
     }
 
     @RequestMapping(value="/biogas-calculator",method = RequestMethod.GET)
-    public String printHello(ModelMap model) {
+    public String getBiogasCalculator(ModelMap model) {
         model.addAttribute("message", "Bio-Gas FIT Calculator");
 
         return "biogas-calculator";
@@ -40,8 +41,10 @@ public class HomeController{
 
     @RequestMapping(value="/biogas-json",method = RequestMethod.POST)
     @ResponseBody
-    public String printText(@RequestBody String input) {
+    public String getBiogasJson(@RequestBody String input) throws ParseException, IOException {
         log.info("input: "+ input);
+        model.setInput(input);
+        model.update();
         String output =  model.getOutput();
         log.info("output: "+ output);
         return output;

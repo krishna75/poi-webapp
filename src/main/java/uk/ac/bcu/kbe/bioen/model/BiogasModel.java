@@ -1,14 +1,11 @@
 package uk.ac.bcu.kbe.bioen.model;
 
-import com.google.common.collect.Maps;
-import com.google.gson.Gson;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -22,7 +19,7 @@ public class BiogasModel {
     private org.slf4j.Logger log = LoggerFactory.getLogger(this.getClass());
 
     //input variables
-    private String filename = this.getClass().getClassLoader().getResource("biogas-fit-calculator.txt").getFile();
+    private String filename = this.getClass().getClassLoader().getResource("biogas-fit-calculator.xlsm").getFile();
     ExcelReader excelReader;
     int numCows;
     int area;
@@ -39,10 +36,16 @@ public class BiogasModel {
         JSONObject jsonObject = stringToMap(jsonString);
         numCows = Integer.parseInt(jsonObject.get("num-cows").toString());
         area = Integer.parseInt(jsonObject.get("area").toString());
+        excelReader.setCellValue(0,"d4",String.valueOf(numCows));
+        excelReader.setCellValue(0,"d5",String.valueOf(numCows));
     }
 
     JSONObject stringToMap(String jsonString) throws ParseException {
         return (JSONObject) new JSONParser().parse(jsonString);
+    }
+
+    public void update() throws IOException {
+        excelReader.update();
     }
 
     public String getOutput() {
