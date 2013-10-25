@@ -1,19 +1,36 @@
 /* Input variables */
 var  cows = 1;
 var  area = 1;
+var  cowSlurry = 1;
+var  cowDryMatter = 1;
+
 
 
 /* Events and actions */
-$("#cow-slider").bind("slider:changed", function (event, data) {
+$("#cowSlider").bind("slider:changed", function (event, data) {
      cows = data.value;
-     $("#cow-value").text(data.value.toFixed(0));
+     $("#cowValue").text(data.value);
      update();
 });
 
 
-$("#area-slider").bind("slider:changed", function (event, data) {
+$("#areaSlider").bind("slider:changed", function (event, data) {
      area = data.value;
-     $("#area-value").text(data.value.toFixed(0));
+     $("#areaValue").text(data.value);
+     update();
+});
+
+$("#cowSlurry").change(function() {
+     var value = $("#cowSlurry").val();
+     console.log("cowSlurry = "+value);
+     cowSlurry= parseInt(value);
+     update();
+});
+
+$("#cowDryMatter").change(function() {
+     var value = $("#cowDryMatter").val();
+     console.log("cowDryMatter = "+value);
+     cowDryMatter = parseInt(value);
      update();
 });
 
@@ -32,6 +49,7 @@ function update(){
         var biogasJson = jQuery.parseJSON( outputData );
         $("#biogas").text( biogasJson.biogas);
         $("#energy").text( biogasJson.energy);
+        $("#cowBiogas").text( biogasJson.cowBiogas);
      });
 }
 
@@ -40,7 +58,9 @@ function update(){
 function getInputJson(){
     var mapArray = [
         new Map("cows",parseInt(cows)),
-        new Map("area",parseInt(area))
+        new Map("area",parseInt(area)),
+        new Map("cowSlurry",parseInt(cowSlurry)),
+        new Map("cowDryMatter",parseInt(cowDryMatter))
     ];
 
     var json = '{';

@@ -1,12 +1,13 @@
 
-.form-content{
+.formContent{
   margin-left:25px;
 }
 
 .output{
     width:200px;
     height:50px;
-    background-color:green;
+    background-color:#CCFFFF;
     border:1px solid gray;
     border-radius: 5px;
+    padding : 0px 15px 0px 15px;
 }

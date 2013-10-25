@@ -43,6 +43,9 @@ public class HomeController {
                 {"area","0","d5","number","input"},
                 {"energy","0","d50","formula", "output"},
                 {"biogas","0","d74","formula", "output"},
+                {"cowSlurry","0","d7","number", "input"},
+                {"cowDryMatter","0","d8","number", "input"},
+                {"cowBiogas","0","d16","formula", "output"},
         };
         return array;
     }
