@@ -3,7 +3,6 @@ package uk.ac.bcu.kbe.bioen.dao;
 import com.google.common.collect.Lists;
 import org.junit.Before;
 import org.junit.Test;
-import uk.ac.bcu.kbe.bioen.dao.ExcelReader;
 
 import java.io.IOException;
 import java.util.List;
@@ -48,10 +47,10 @@ public class ExcelReaderTest {
 
     @Test
     public void testGetCellValueWithCellId() throws IOException {
-        assertEquals("Name", reader.getCellValue(0, "a5"));
-        assertEquals("Krishna Sapkota", reader.getCellValue(0, "a6"));
-        assertEquals("Email", reader.getCellValue(0, "d5"));
-        assertEquals("ks_21285@hotmail.com", reader.getCellValue(0, "d6"));
+        assertEquals("Name", reader.getCellValueString(0, "a5"));
+        assertEquals("Krishna Sapkota", reader.getCellValueString(0, "a6"));
+        assertEquals("Email", reader.getCellValueString(0, "d5"));
+        assertEquals("ks_21285@hotmail.com", reader.getCellValueString(0, "d6"));
     }
 
     /* Tests for setters */
@@ -61,8 +60,8 @@ public class ExcelReaderTest {
         reader.setCellValue(0, "a1", 1);
         reader.setCellValue(0, "b1", 100);
 
-        assertEquals("1.0", reader.getCellValue(0, "a1"));
-        assertEquals("100.0", reader.getCellValue(0, "b1"));
+        assertEquals(1, reader.getCellValueNumber(0, "a1"));
+        assertEquals(100, reader.getCellValueNumber(0, "b1"));
     }
 
 

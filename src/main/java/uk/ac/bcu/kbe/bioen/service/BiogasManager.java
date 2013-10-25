@@ -1,16 +1,16 @@
 package uk.ac.bcu.kbe.bioen.service;
 
+import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
 import com.google.gson.Gson;
 import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import uk.ac.bcu.kbe.bioen.dao.ExcelReader;
-import uk.ac.bcu.kbe.bioen.model.InputBiogasModel;
 
 import java.io.IOException;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -22,43 +22,59 @@ import java.io.IOException;
 public class BiogasManager {
 
     private Logger log = LoggerFactory.getLogger(this.getClass());
-    private final ExcelReader excelReader;
 
-    public BiogasManager(ExcelReader excelReader) throws IOException {
+    private final ExcelReader excelReader;
+    private final String[][] varCellMappings;
+
+    public BiogasManager(ExcelReader excelReader, String[][] varCellMappings) throws IOException {
         this. excelReader = excelReader;
+        this.varCellMappings = varCellMappings;
     }
 
     public void setInput(String jsonString) throws ParseException {
         log.info("parsing string to json : "+jsonString);
 
         Gson gson = new Gson();
-        InputBiogasModel model = gson.fromJson(jsonString , InputBiogasModel.class);
-        log.info(" gson  = "+ model.getCows()+", "+model.getArea());
-
-        int numCows = Integer.parseInt(model.getCows());
-        int area = Integer.parseInt(model.getArea());
-        log.info("processing values "+ numCows+" and " + area);
-        excelReader.setCellValue(0,"d4",numCows);
-        excelReader.setCellValue(0,"d5",area);
+        Map<String,String> map = gson.fromJson(jsonString , Map.class);
+        for (String key : map.keySet()) {
+            String sheetIndex = getMapping(key)[1];
+            String cellId = getMapping(key)[2];
+            String value =  map.get(key);
+            excelReader.setCellValue(Integer.parseInt(sheetIndex), cellId, Integer.parseInt(value));
+        }
     }
 
-    public void update(Multimap<Integer, String> sheetCells) throws IOException {
+    public void update() throws IOException {
+        Multimap<Integer, String> sheetCells = ArrayListMultimap.create();
+        for (String[] varCellArray : varCellMappings) {
+                if (varCellArray[3].equals("formula")){
+                    Integer sheetIndex = Integer.parseInt(varCellArray[1]);
+                    sheetCells.put(sheetIndex, varCellArray[2]);
+                }
+        }
         excelReader.update(sheetCells);
+    }
+
+    String[] getMapping(String variable) {
+        for (String[] varCellMapping : varCellMappings) {
+            if (varCellMapping[0].equals(variable)) {
+                return varCellMapping;
+            }
+        }
+        return null;
     }
 
     public String getOutput() {
         JSONObject map = new JSONObject();
-        map.put("biogas", getBiogas());
-        map.put("energy", getEnergy());
+        for (String[] varCellMapping : varCellMappings) {
+            String sheetIndex = varCellMapping[1];
+            String cellId = varCellMapping[2];
 
+            int value = excelReader.getCellValueNumber(Integer.parseInt(sheetIndex), cellId);
+            String variable = varCellMapping[0];
+
+            map.put(variable, value);
+        }
         return map.toJSONString();
-    }
-
-    String getBiogas() {
-        return excelReader.getCellValue(0, "d74");
-    }
-
-     String getEnergy() {
-        return excelReader.getCellValue(0, "d50");
     }
 }

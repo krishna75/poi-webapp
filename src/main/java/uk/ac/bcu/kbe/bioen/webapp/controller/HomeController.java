@@ -1,8 +1,6 @@
 package uk.ac.bcu.kbe.bioen.webapp.controller;
 
-import com.google.common.collect.ArrayListMultimap;
-import com.google.common.collect.Multimap;
-import com.google.common.collect.Multimaps;
+import com.google.common.collect.*;
 import org.json.simple.parser.ParseException;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -15,6 +13,8 @@ import uk.ac.bcu.kbe.bioen.dao.ExcelReader;
 import uk.ac.bcu.kbe.bioen.service.BiogasManager;
 
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -25,45 +25,47 @@ import java.io.IOException;
  */
 @Controller
 
-public class HomeController{
+public class HomeController {
     private org.slf4j.Logger log = LoggerFactory.getLogger(this.getClass());
 
     private final String filename = this.getClass().getClassLoader().getResource("biogas-fit-calculator.xlsm").getFile();
-    private final Multimap<Integer,String> sheetCells;
+    private final String[][] variableCellMappings;
     private BiogasManager manager;
 
     public HomeController() throws IOException {
-        manager = new BiogasManager(new ExcelReader(filename));
-        sheetCells = getFormulaCells();
+        variableCellMappings = createVariableCellMappings();
+        manager = new BiogasManager(new ExcelReader(filename),variableCellMappings);
     }
 
-    private Multimap<Integer,String> getFormulaCells() {
-        Multimap<Integer,String> sheetCells = ArrayListMultimap.create();
-        sheetCells = ArrayListMultimap.create();
-        sheetCells.put(0, "d50");
-        sheetCells.put(0, "d74");
-        return  sheetCells;
+    private String[][] createVariableCellMappings(){
+        String[][] array = {
+                {"cows","0","d4","number","input"},
+                {"area","0","d5","number","input"},
+                {"energy","0","d50","formula", "output"},
+                {"biogas","0","d74","formula", "output"},
+        };
+        return array;
     }
 
-    @RequestMapping(value="/biogas-calculator",method = RequestMethod.GET)
+
+    @RequestMapping(value = "/biogas-calculator", method = RequestMethod.GET)
+
     public String getBiogasCalculator(ModelMap model) {
         model.addAttribute("message", "Bio-Gas FIT Calculator");
 
         return "biogas-calculator";
     }
 
-    @RequestMapping(value="/biogas-json",method = RequestMethod.POST)
+    @RequestMapping(value = "/biogas-json", method = RequestMethod.POST)
     @ResponseBody
     public String getBiogasJson(@RequestBody String input) throws ParseException, IOException {
-        log.info("input: "+ input);
+        log.info("input: " + input);
         manager.setInput(input);
-        manager.update(sheetCells);
-        String output =  manager.getOutput();
-        log.info("output: "+ output);
+        manager.update();
+        String output = manager.getOutput();
+        log.info("output: " + output);
         return output;
     }
-
-
 
 
 }
