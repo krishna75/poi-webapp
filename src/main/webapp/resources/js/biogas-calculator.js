@@ -27,7 +27,8 @@ function update(){
          contentType:"application/json; charset=utf-8",
      })
      .done(function(outputData){
-        $("#test").text( outputData);
+        console.log("response json = "+outputData);
+
         var biogasJson = jQuery.parseJSON( outputData );
         $("#biogas").text( biogasJson.biogas);
         $("#energy").text( biogasJson.energy);
