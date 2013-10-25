@@ -1,5 +1,8 @@
 package uk.ac.bcu.kbe.bioen.webapp.controller;
 
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.Multimap;
+import com.google.common.collect.Multimaps;
 import org.json.simple.parser.ParseException;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -25,11 +28,21 @@ import java.io.IOException;
 public class HomeController{
     private org.slf4j.Logger log = LoggerFactory.getLogger(this.getClass());
 
-    private final String filename = this.getClass().getClassLoader().getResource("biogas-test.xlsx").getFile();
+    private final String filename = this.getClass().getClassLoader().getResource("biogas-fit-calculator.xlsm").getFile();
+    private final Multimap<Integer,String> sheetCells;
     private BiogasManager manager;
 
     public HomeController() throws IOException {
         manager = new BiogasManager(new ExcelReader(filename));
+        sheetCells = getFormulaCells();
+    }
+
+    private Multimap<Integer,String> getFormulaCells() {
+        Multimap<Integer,String> sheetCells = ArrayListMultimap.create();
+        sheetCells = ArrayListMultimap.create();
+        sheetCells.put(0, "d50");
+        sheetCells.put(0, "d74");
+        return  sheetCells;
     }
 
     @RequestMapping(value="/biogas-calculator",method = RequestMethod.GET)
@@ -44,7 +57,7 @@ public class HomeController{
     public String getBiogasJson(@RequestBody String input) throws ParseException, IOException {
         log.info("input: "+ input);
         manager.setInput(input);
-        manager.update();
+        manager.update(sheetCells);
         String output =  manager.getOutput();
         log.info("output: "+ output);
         return output;

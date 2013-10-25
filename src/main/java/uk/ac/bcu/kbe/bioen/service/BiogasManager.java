@@ -1,5 +1,6 @@
 package uk.ac.bcu.kbe.bioen.service;
 
+import com.google.common.collect.Multimap;
 import com.google.gson.Gson;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -41,8 +42,8 @@ public class BiogasManager {
         excelReader.setCellValue(0,"d5",area);
     }
 
-    public void update() throws IOException {
-        excelReader.update();
+    public void update(Multimap<Integer, String> sheetCells) throws IOException {
+        excelReader.update(sheetCells);
     }
 
     public String getOutput() {

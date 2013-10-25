@@ -2,9 +2,11 @@ package uk.ac.bcu.kbe.bioen.dao;
 
 
 import com.google.common.collect.Lists;
+import com.google.common.collect.Multimap;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.FormulaEvaluator;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.slf4j.Logger;
@@ -40,29 +42,13 @@ public class ExcelReader {
         return new XSSFWorkbook(fileInputStream);
     }
 
-    public void update() throws IOException {
-
-//        fileInputStream.close();
-//
-//        // Write the output to a file
-//        FileOutputStream fileOutputStream = new FileOutputStream(new File(filename));
-//        workbook.write(fileOutputStream);
-//        fileOutputStream.close();
-//        fileInputStream =   new FileInputStream(new File(filename));
-//        workbook = new XSSFWorkbook(fileInputStream);
-
+    public void update(Multimap<Integer,String> sheetCells) throws IOException {
         FormulaEvaluator evaluator = workbook.getCreationHelper().createFormulaEvaluator();
-        for(int sheetNum = 0; sheetNum < workbook.getNumberOfSheets(); sheetNum++) {
-            XSSFSheet sheet = workbook.getSheetAt(sheetNum);
-            for(Row r : sheet) {
-                for(Cell c : r) {
-                    if(c.getCellType() == Cell.CELL_TYPE_FORMULA) {
-                        evaluator.evaluateFormulaCell(c);
-                    }
-                }
+        for (Integer sheetIndex : sheetCells.keySet()) {
+            for (String cellId : sheetCells.get(sheetIndex)) {
+                evaluator.evaluateFormulaCell(getCell(sheetIndex, cellId));
             }
         }
-//        fileInputStream.close();
     }
 
     public List<String> getRowValues(int sheetIndex, int rowIndex) {
