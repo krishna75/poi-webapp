@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f97d80ea-37bd-4c6c-9986-60f804109998" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/sexy-form.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bioen.iml" afterPath="$PROJECT_DIR$/bioen.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/biogas-calculator.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/biogas-calculator.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/biogas-calculator.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/biogas-calculator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bioen.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382701310033" ignored="false" />
+    <file path="/Dummy.txt" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382706711617" ignored="false" />
     <file path="/ExcelReader.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382700075318" ignored="false" />
     <file path="/ExcelReaderTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382700168458" ignored="false" />
     <file path="/fragment.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382608826722" ignored="false" />
@@ -124,7 +118,7 @@
       <file leaf-file-name="HomeController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="88" selection-start="1263" selection-end="1263" vertical-scroll-proportion="0.0">
+            <state line="46" column="78" selection-start="1776" selection-end="1776" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,7 +129,7 @@
       <file leaf-file-name="biogas-calculator.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/biogas-calculator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="52" selection-start="586" selection-end="586" vertical-scroll-proportion="0.3910939">
+            <state line="51" column="52" selection-start="1248" selection-end="1292" vertical-scroll-proportion="0.44046468">
               <folding />
             </state>
           </provider>
@@ -1161,7 +1155,11 @@
       <created>1382701315763</created>
       <updated>1382701315763</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="added more variables from front end i.e. cowSlurry, cowDryMatter, cowBiogas">
+      <created>1382706719764</created>
+      <updated>1382706719764</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1233,7 +1231,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed console.js as the jquery has its own copy inside." />
+    <option name="LAST_COMMIT_MESSAGE" value="added more variables from front end i.e. cowSlurry, cowDryMatter, cowBiogas" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1247,7 +1245,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="working spring web mvc and jetty" />
     <MESSAGE value="introduced a jquery based slider" />
     <MESSAGE value="initial implementation of jquery ajax send and receive json data" />
     <MESSAGE value="getting json from server by sending a json" />
@@ -1272,6 +1269,7 @@
     <MESSAGE value="evaluating some cells were problematic, now will only evaluate a list of formula cells" />
     <MESSAGE value="restructured the project such that the end user can provide excel file and the mapping of the variables and their location in terms of cell id" />
     <MESSAGE value="removed console.js as the jquery has its own copy inside." />
+    <MESSAGE value="added more variables from front end i.e. cowSlurry, cowDryMatter, cowBiogas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1374,15 +1372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="88" selection-start="1263" selection-end="1263" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="48" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.0">
@@ -1390,9 +1379,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="78" selection-start="1776" selection-end="1776" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/biogas-calculator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="52" selection-start="586" selection-end="586" vertical-scroll-proportion="0.3910939">
+        <state line="51" column="52" selection-start="1248" selection-end="1292" vertical-scroll-proportion="0.44046468">
           <folding />
         </state>
       </provider>
