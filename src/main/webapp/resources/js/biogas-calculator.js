@@ -1,8 +1,12 @@
 /* Input variables */
 var  cows = 1;
 var  area = 1;
+
 var  cowSlurry = 1;
 var  cowDryMatter = 1;
+
+var  cropYield = 1;
+var  cropDryMatter = 1;
 
 
 
@@ -35,6 +39,21 @@ $("#cowDryMatter").change(function() {
 });
 
 
+$("#cropYield").change(function() {
+     var value = $("#cropYield").val();
+     console.log("cropYield = "+value);
+     cropYield = parseInt(value);
+     update();
+});
+
+$("#cropDryMatter").change(function() {
+     var value = $("#cropDryMatter").val();
+     console.log("cropDryMatter = "+value);
+     cropDryMatter = parseInt(value);
+     update();
+});
+
+
 /* Sends and receives info from server in json format*/
 function update(){
      $.ajax({
@@ -50,6 +69,7 @@ function update(){
         $("#biogas").text( biogasJson.biogas);
         $("#energy").text( biogasJson.energy);
         $("#cowBiogas").text( biogasJson.cowBiogas);
+        $("#cropBiogas").text( biogasJson.cropBiogas);
      });
 }
 
@@ -60,7 +80,9 @@ function getInputJson(){
         new Map("cows",parseInt(cows)),
         new Map("area",parseInt(area)),
         new Map("cowSlurry",parseInt(cowSlurry)),
-        new Map("cowDryMatter",parseInt(cowDryMatter))
+        new Map("cowDryMatter",parseInt(cowDryMatter)),
+        new Map("cropYield",parseInt(cropYield)),
+        new Map("cropDryMatter",parseInt(cropDryMatter))
     ];
 
     var json = '{';

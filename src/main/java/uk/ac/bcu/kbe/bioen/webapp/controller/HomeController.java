@@ -46,6 +46,9 @@ public class HomeController {
                 {"cowSlurry","0","d7","number", "input"},
                 {"cowDryMatter","0","d8","number", "input"},
                 {"cowBiogas","0","d16","formula", "output"},
+                {"cropYield","0","d18","number", "input"},
+                {"cropDryMatter","0","d19","number", "input"},
+                {"cropBiogas","0","d28","formula", "output"},
         };
         return array;
     }

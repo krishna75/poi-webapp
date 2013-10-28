@@ -32,42 +32,54 @@
    <hr/>
 
    <div class="formContent" >
-   <table>
-   <tr>
-       <td>
+       <table>
+       <tr>
+           <td>
 
-       Number of Dairy Cows:
-       <span id="cowValue">0</span>
-       <input id="cowSlider" type="text" data-slider="true" data-slider-range="11,2000">
+               Number of Dairy Cows:
+               <span id="cowValue">0</span>
+               <input id="cowSlider" type="text" data-slider="true" data-slider-range="11,2000">
 
-        Area of Maize Silage:
-       <span id="areaValue">0</span>
-       <input id="areaSlider" type="text" data-slider="true" data-slider-range="11,2000">
+                Area of Maize Silage:
+               <span id="areaValue">0</span>
+               <input id="areaSlider" type="text" data-slider="true" data-slider-range="11,2000">
 
-       <hr/>
-       Biogas: <span id="biogas" class="output"> 0 </span>
-       Engergy: <span id="energy" class="output">0 </span>
+               <hr/>
+               Biogas: <span id="biogas" class="output"> 0 </span>
+               Engergy: <span id="energy" class="output">0 </span>
 
+                <ul>
+                  <li>
+                    <label for="cowSlurry">Slurry Production per Cow (kg/hd/day) </label>
+                      <input type="text" size="20" id="cowSlurry" />
+                  </li>
+                  <li>
+                    <label for="cowDryMatter">% Dry Matter (77,000) </label>
+                      <input type="text" size="20" id="cowDryMatter" />
+                  </li>
+                  <li>
+                       Cow-Biogas: <span id="cowBiogas" class="output"> 0 </span>
+                  </li>
+                </ul>
+        </td>
 
-        <ul>
-              <li>
-                <label for="cowSlurry">Slurry Production per Cow (kg/hd/day) </label>
-                  <input type="text" size="40" id="cowSlurry" />
-              </li>
-              <li>
-                <label for="cowDryMatter">% Dry Matter (77,000) </label>
-                  <input type="text" size="40" id="cowDryMatter" />
-              </li>
-              <li>
-                   Cow-Biogas: <span id="cowBiogas" class="output"> 0 </span>
-              </li>
-        </ul>
-    </td>
-
-    <td>
-    </td>
-</tr>
-</table>
+        <td>
+            <ul>
+                 <li>
+                   <label for="cropYield">Crop Yield (tonne/ha/yr) </label>
+                     <input type="text" size="20" id="cropYield" />
+                 </li>
+                 <li>
+                   <label for="cropDryMatter">Crop % Dry Matter (77,000) </label>
+                     <input type="text" size="20" id="cropDryMatter" />
+                 </li>
+                 <li>
+                      Crop-Biogas: <span id="cropBiogas" class="output"> 0 </span>
+                 </li>
+               </ul>
+        </td>
+    </tr>
+    </table>
 
  </div>
 
