@@ -37,8 +37,14 @@
     </script>
 </head>
 <body>
-
-   <h2>${message}</h2>
+   <img src="<c:url value='/resources/images/bcu.png' />" />
+   <img src="<c:url value='/resources/images/aston_business.png' />" />
+   <img src="<c:url value='/resources/images/ebri.png' />" />
+   <img src="<c:url value='/resources/images/invester_people.png' />" />
+   <img src="<c:url value='/resources/images/greenwatt.png' />" />
+   <img src="<c:url value='/resources/images/bioen.png' />" />
+   <img src="<c:url value='/resources/images/nwe.png' />" />
+   <h1>${message}</h1>
    <hr/>
 
    <div class="formContent" >
