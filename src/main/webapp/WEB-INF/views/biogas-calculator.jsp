@@ -12,11 +12,18 @@
     <script src="<c:url value='/resources/js/simple-slider.js' />"></script>
     <link href="<c:url value='/resources/css/simple-slider.css' />" rel="stylesheet" type="text/css" />
 
+
     <script src="<c:url value='/resources/js/sexy-form.js' />"></script>
     <link href="<c:url value='/resources/css/sexy-form.css' />" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Engagement' rel='stylesheet' type='text/css'>
 
-    <script src="<c:url value='/resources/js/Chart.js' />"></script>
+
+    <link href="<c:url value='/resources/css/nv.d3.css' />" rel="stylesheet" type="text/css" />
+
+
+
+
+
 
 
     <link href="<c:url value='/resources/css/biogas-calculator.css' />" rel="stylesheet" type="text/css" />
@@ -83,9 +90,10 @@
         </td>
     </tr>
     <tr>
+
       <td>
-         <canvas id="lineOrBar" width="400" height="400"></canvas>
-         <canvas id="pieAndOther" width="400" height="400"></canvas>
+
+
 
       </td>
     </tr>
@@ -98,11 +106,23 @@
   <p>A part of BioEN project</p>
   </footer>
 
+   <svg id="chart1"></svg>
 
 
+     <script src="<c:url value='/resources/js/chart/d3.v3.js' />"></script>
+       <script src="<c:url value='/resources/js/chart/nv.d3.js' />"></script>
+       <script src="<c:url value='/resources/js/chart/legend.js' />"></script>
+       <script src="<c:url value='/resources/js/chart/utils.js' />"></script>
+       <script src="<c:url value='/resources/js/chart/tooltip.js' />"></script>
+       <script src="<c:url value='/resources/js/chart/axis.js' />"></script>
 
 
-   <script src="<c:url value='/resources/js/biogas-calculator.js' />"></script>
-   <script src="<c:url value='/resources/js/biogas-chart.js' />"></script>
+       <script src="<c:url value='/resources/js/chart/discreteBar.js' />"></script>
+       <script src="<c:url value='/resources/js/chart/discreteBarChart.js' />"></script>
+
+
+   <script src="<c:url value='/resources/js/biogas/biogas-calculator.js' />"></script>
+   <script src="<c:url value='/resources/js/biogas/biogas-chart.js' />"></script>
+   <script src="http://d3js.org/d3.v3.js"></script>
 </body>
 </html>

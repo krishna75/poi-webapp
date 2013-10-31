@@ -12,24 +12,7 @@
     padding : 0px 15px 0px 15px;
 }
 
-
-
-body {
-  font: 10px sans-serif;
+#chart1 {
+  height: 400px;
+  width: 400px;
 }
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.bar {
-  fill: steelblue;
-}
-
-.x.axis path {
-  display: none;
-}
-
