@@ -1,82 +1,48 @@
+google.load("visualization", "1", {packages:["corechart"]});
+             google.setOnLoadCallback(drawChart);
+             function drawChart() {
+               var data = google.visualization.arrayToDataTable([
+                 ['Year', 'Sales', 'Ex'],
+                 ['2004',  1000,      400],
+                 ['2005',  1170,      460],
+                 ['2006',  660,       1120],
+                 ['2007',  1030,      540]
+               ]);
+
+               var options = {
+                 title: 'Company Performance'
+               };
+
+               var chart = new google.visualization.LineChart(document.getElementById('chart1'));
+               chart.draw(data, options);
 
 
 
 
+               var dataPie = google.visualization.arrayToDataTable([
+                         ['Task', 'Hours per Day'],
+                         ['Work',     11],
+                         ['Eat',      2],
+                         ['Commute',  2],
+                         ['Watch TV', 2],
+                         ['Sleep',    7]
+                       ]);
+
+                       var optionsPie = {
+                         title: 'My Daily Activities'
+                       };
+
+                       var chartPie = new google.visualization.PieChart(document.getElementById('chart3'));
+                       chartPie.draw(dataPie, options);
 
 
-nv.addGraph(function() {  
-  var chart = nv.models.discreteBarChart()
-      .x(function(d) { return d.label })
-      .y(function(d) { return d.value })
-      .staggerLabels(true)
-      //.staggerLabels(historicalBarChart[0].values.length > 8)
-      .tooltips(false)
-      .showValues(true)
-      .transitionDuration(250)
-      ;
+               var optionsCol = {
+                         title: 'Company Performance',
+                         hAxis: {title: 'Year', titleTextStyle: {color: 'red'}}
+                       };
 
-  d3.select('#chart1')
-      .datum(getBarChartData())
-      .call(chart);
+               var chartCol = new google.visualization.ColumnChart(document.getElementById('chart2'));
+               chartCol.draw(dataPie, optionsCol);
+             }
 
-  nv.utils.windowResize(chart.update);
-
-  return chart;
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function getBarChartData(){
-    historicalBarChart = [
-      {
-        key: "Cumulative Return",
-        values: [
-          {
-            "label" : "A" ,
-            "value" : -29.765957771107
-          } ,
-          {
-            "label" : "B" ,
-            "value" : 0
-          } ,
-          {
-            "label" : "C" ,
-            "value" : -32.807804682612
-          } ,
-          {
-            "label" : "D" ,
-            "value" : 196.45946739256
-          } ,
-          {
-            "label" : "E" ,
-            "value" : 0.19434030906893
-          } ,
-          {
-            "label" : "F" ,
-            "value" : -98.079782601442
-          } ,
-          {
-            "label" : "G" ,
-            "value" : 13.925743130903
-          } ,
-          {
-            "label" : "H" ,
-            "value" : 5.1387322875705
-          }
-        ]
-      }
-    ];
-    return historicalBarChart;
-}
 

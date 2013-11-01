@@ -2,23 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f97d80ea-37bd-4c6c-9986-60f804109998" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/aston_business.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/bcu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/bioen.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/ebri.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/greenwatt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/investor_people.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/nwe.png" />
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Downloads/jqPlot/jquery.jqplot.css" />
-      <change type="NEW" beforePath="" afterPath="$USER_HOME$/Downloads/jqPlot/jquery.jqplot.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/biogas-fit-calculator-v1.0.xlsm" />
+      <change type="DELETED" beforePath="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\webapp\resources\css\nv.d3.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\webapp\resources\css\sexy-form.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\webapp\resources\js\chart\axis.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\webapp\resources\js\chart\discreteBar.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\webapp\resources\js\chart\discreteBarChart.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\webapp\resources\js\chart\legend.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\webapp\resources\js\chart\line.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\webapp\resources\js\chart\nv.d3.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\webapp\resources\js\chart\tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\webapp\resources\js\chart\utils.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/biogas-calculator.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/biogas-calculator.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-calculator.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-calculator.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-chart.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-chart.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bioen.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1383233548944" ignored="false" />
+    <file path="/Dummy.txt" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1383306015718" ignored="false" />
     <file path="/ExcelReader.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382700075318" ignored="false" />
     <file path="/ExcelReaderTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382700168458" ignored="false" />
     <file path="/fragment.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382608826722" ignored="false" />
@@ -30,26 +34,26 @@
     <file path="$USER_HOME$/Downloads/maven-jetty-spring-slf4j-demo/src/main/java/sk/upjs/ics/novotnyr/mjss/WebInitializer.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382028556417" ignored="false" />
     <file path="$USER_HOME$/Downloads/maven-jetty-spring-slf4j-demo/src/main/java/sk/upjs/ics/novotnyr/mjss/WebApplicationContext.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382028556417" ignored="false" />
     <file path="/web-context.xml" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382030877061" ignored="false" />
-    <file path="/HomeController.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382696271772" ignored="false" />
+    <file path="/HomeController.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1383308745963" ignored="false" />
     <file path="/hello.jsp" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382444440076" ignored="false" />
     <file path="/BiogasFitCalculator.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382438073340" ignored="false" />
     <file path="$PROJECT_DIR$/../../../regcmantic/src/main/java/uk/ac/brookes/regcmantic/rcm/main/Main.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382436666351" ignored="false" />
     <file path="/BioEN-servlet.xml" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382441435291" ignored="false" />
     <file path="/BiogasModel.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382611023936" ignored="false" />
-    <file path="/biogas-calculator.jsp" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1383235294238" ignored="false" />
+    <file path="/biogas-calculator.jsp" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1383310384612" ignored="false" />
     <file path="/BiogasModelTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382542536004" ignored="false" />
     <file path="/HomeControllerTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382596815362" ignored="false" />
     <file path="/BiogasManager.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382699955122" ignored="false" />
-    <file path="/biogas-calculator.js" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382711642492" ignored="false" />
+    <file path="/biogas-calculator.js" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1383311171911" ignored="false" />
     <file path="/a.dummy" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382626148469" ignored="false" />
     <file path="/BiogasManagerTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382699054860" ignored="false" />
     <file path="/variable-cell-mapping.txt" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382693192377" ignored="false" />
     <file path="/CellType.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382695538851" ignored="false" />
     <file path="/Direction.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382695569571" ignored="false" />
     <file path="/BaseTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382699010745" ignored="false" />
-    <file path="/biogas-calculator.css" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1383233952239" ignored="false" />
+    <file path="/biogas-calculator.css" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1383237945659" ignored="false" />
     <file path="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/biogas_002dcalculator_jsp.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382705198966" ignored="false" />
-    <file path="/biogas-chart.js" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1383233725599" ignored="false" />
+    <file path="/biogas-chart.js" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1383307509023" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,19 +114,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="biogas-calculator.jsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="biogas-calculator.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="82" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.3785092">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nv.d3.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/chart/nv.d3.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="44" column="29" selection-start="1662" selection-end="1664" vertical-scroll-proportion="-4.44">
               <folding />
             </state>
           </provider>
@@ -131,16 +126,16 @@
       <file leaf-file-name="biogas-calculator.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/biogas-calculator.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="8" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+            <state line="14" column="25" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="biogas-calculator.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="biogas-calculator.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-calculator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="67" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.0">
+            <state line="25" column="72" selection-start="753" selection-end="753" vertical-scroll-proportion="0.29563493">
               <folding />
             </state>
           </provider>
@@ -149,7 +144,16 @@
       <file leaf-file-name="biogas-chart.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-chart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
+            <state line="37" column="0" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="43" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -174,7 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/variable-cell-mapping.txt" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/helper/CellType.java" />
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/helper/Direction.java" />
@@ -184,12 +187,13 @@
         <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/dao/ExcelReader.java" />
         <option value="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/dao/ExcelReaderTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/biogas-calculator.js" />
-        <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/biogas-chart.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-chart.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/biogas-calculator.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-chart.js" />
+        <option value="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-calculator.js" />
       </list>
     </option>
   </component>
@@ -296,20 +300,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="bioen">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -320,6 +310,20 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="bioen" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="bioen">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -439,6 +443,66 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -622,36 +686,36 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="uk.ac.bcu.kbe.bioen.webapp.controller" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\webapp\resources\images" />
+      <recent name="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\resources" />
       <recent name="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\webapp\resources\js\chart" />
       <recent name="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\webapp\resources\js" />
+      <recent name="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\webapp\resources\images" />
       <recent name="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\webapp\resources\css" />
-      <recent name="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\resources" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="uk.ac.bcu.kbe.bioen.dao" />
-      <recent name="uk.ac.bcu.kbe.bioen.service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\webapp\resources\js\chart" />
       <recent name="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\webapp\resources\js\biogas" />
       <recent name="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\webapp\resources\css" />
       <recent name="D:\Dropbox\Krishna\Birmingham\code\bioen\src\main\webapp\resources\js" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="uk.ac.bcu.kbe.bioen.dao" />
+      <recent name="uk.ac.bcu.kbe.bioen.service" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in bioen">
@@ -807,6 +871,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -832,19 +909,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1062,7 +1126,11 @@
       <created>1383233600546</created>
       <updated>1383233600547</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="logos of the organisations added">
+      <created>1383235472207</created>
+      <updated>1383235472207</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1077,13 +1145,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295562" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32610744" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24834438" sideWeight="0.12936732" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1821192" sideWeight="0.5871819" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18432671" sideWeight="0.58734655" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24834438" sideWeight="0.87063265" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4128181" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41265345" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1285872" sideWeight="0.68932956" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1134,7 +1202,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial working nvd3 javascript library to create charts" />
+    <option name="LAST_COMMIT_MESSAGE" value="logos of the organisations added" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1148,7 +1216,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="working workspace" />
     <MESSAGE value="fixed working with resources. the &quot;.xslm&quot; format was not recognized." />
     <MESSAGE value="evaluating the formula" />
     <MESSAGE value="tidy up" />
@@ -1173,6 +1240,7 @@
     <MESSAGE value="testing chart.js" />
     <MESSAGE value="javascript separated from the html code for the charts" />
     <MESSAGE value="initial working nvd3 javascript library to create charts" />
+    <MESSAGE value="logos of the organisations added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1182,116 +1250,37 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/sexy-form.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-chart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="37" selection-start="2965" selection-end="2970" vertical-scroll-proportion="0.67790896">
+        <state line="37" column="0" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="38" selection-start="1998" selection-end="1998" vertical-scroll-proportion="0.88195616">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="54" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/chart/d3.v3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/chart/tooltip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/chart/legend.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/chart/line.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/chart/discreteBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/chart/axis.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/nv.d3.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/chart/nv.d3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-calculator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="67" selection-start="1875" selection-end="1875" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
+        <state line="25" column="43" selection-start="835" selection-end="835" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/biogas-calculator.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="8" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+        <state line="14" column="25" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="82" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.3785092">
+        <state line="44" column="29" selection-start="1662" selection-end="1664" vertical-scroll-proportion="-4.44">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-calculator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="72" selection-start="753" selection-end="753" vertical-scroll-proportion="0.29563493">
           <folding />
         </state>
       </provider>

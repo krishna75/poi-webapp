@@ -28,7 +28,7 @@ import java.util.List;
 public class HomeController {
     private org.slf4j.Logger log = LoggerFactory.getLogger(this.getClass());
 
-    private final String filename = this.getClass().getClassLoader().getResource("biogas-fit-calculator.xlsm").getFile();
+    private final String filename = this.getClass().getClassLoader().getResource("biogas-fit-calculator-v1.0.xlsm").getFile();
     private final String[][] variableCellMappings;
     private BiogasManager manager;
 
@@ -39,16 +39,19 @@ public class HomeController {
 
     private String[][] createVariableCellMappings(){
         String[][] array = {
-                {"cows","0","d4","number","input"},
-                {"area","0","d5","number","input"},
-                {"energy","0","d50","formula", "output"},
-                {"biogas","0","d74","formula", "output"},
-                {"cowSlurry","0","d7","number", "input"},
-                {"cowDryMatter","0","d8","number", "input"},
-                {"cowBiogas","0","d16","formula", "output"},
-                {"cropYield","0","d18","number", "input"},
-                {"cropDryMatter","0","d19","number", "input"},
-                {"cropBiogas","0","d28","formula", "output"},
+
+                // input
+                {"zeroGrazedCows","1","c6","number","input"},
+                {"summerGrazedCows","1","c7","number","input"},
+                {"maizeSilageArea","1","c8","number","input"},
+                {"currentElectricityBill","1","c9","number","input"},
+                {"heatingBillToBeDisplaced","1","c10","number","input"},
+
+                // output
+                {"capitalInvestment","1","c13","formula", "output"},
+                {"electricityCapacity","1","c14","formula", "output"},
+                {"simplePayback","1","c15","formula", "output"}
+
         };
         return array;
     }

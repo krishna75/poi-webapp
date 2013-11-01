@@ -12,7 +12,30 @@
     padding : 0px 15px 0px 15px;
 }
 
-#chart1, #chart2 {
+#chart1, #chart2, #chart3 {
   height: 400px;
   width: 400px;
 }
+
+
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  display: none;
+}
+
+
