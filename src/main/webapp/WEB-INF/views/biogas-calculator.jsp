@@ -64,9 +64,13 @@
 
          </td>
          <td>
-               Capital Investment : <span id="capitalInvestment" class="output"> 0 </span>
-               Electrical Capacity: <span id="electricityCapacity" class="output">0 </span>
-               Simple Payback: <span id="simplePayback" class="output">0 </span>
+
+               <div class="output-block">  Capital Investment : <span id="capitalInvestment" class="output"> 0 </span> </div>
+
+                <div class="output-block">  Electrical Capacity: <span id="electricityCapacity" class="output">0 </span> </div>
+
+                 <div class="output-block"> Simple Payback: <span id="simplePayback" class="output">0 </span> </div>
+
         </td>
 
 
@@ -74,6 +78,7 @@
     </tr>
     <tr>
          <td>
+
              <div id="chart1"></div>
           </td>
           <td>

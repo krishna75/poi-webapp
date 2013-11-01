@@ -22,7 +22,6 @@ import java.util.List;
 * User: ID118320
 * Date: 11/10/13
 * Time: 12:10
-* To change this template use File | Settings | File Templates.
 */
 
 public class ExcelReader {
@@ -83,7 +82,7 @@ public class ExcelReader {
     }
 
     public void setCellValue(int sheetIndex, String cellId, int value) {
-        log.info("seeting cell value: "+value+" for cell "+cellId);
+        log.info("setting cell value: "+value+" for cell "+cellId);
         Cell cell = getCell(sheetIndex, cellId);
         cell.setCellValue(value);
     }

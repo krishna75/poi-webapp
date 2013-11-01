@@ -48,9 +48,9 @@ public class HomeController {
                 {"heatingBillToBeDisplaced","1","c10","number","input"},
 
                 // output
-                {"capitalInvestment","1","c13","formula", "output"},
-                {"electricityCapacity","1","c14","formula", "output"},
-                {"simplePayback","1","c15","formula", "output"}
+                {"capitalInvestment","3","d63","formula", "output"},
+                {"electricityCapacity","3","d65","formula", "output"},
+                {"simplePayback","4","k7","formula", "output"}
 
         };
         return array;
