@@ -41,16 +41,16 @@ public class HomeController {
         String[][] array = {
 
                 // input
-                {"zeroGrazedCows","1","c6","number","input"},
-                {"summerGrazedCows","1","c7","number","input"},
-                {"maizeSilageArea","1","c8","number","input"},
-                {"currentElectricityBill","1","c9","number","input"},
-                {"heatingBillToBeDisplaced","1","c10","number","input"},
+                {"zeroGrazedCows","0","b3","number","input"},
+                {"summerGrazedCows","0","b4","number","input"},
+                {"maizeSilageArea","0","b13","number","input"},
+                {"currentElectricityBill","1","c10","number","input"},
+                {"heatingBillToBeDisplaced","1","c11","number","input"},
 
                 // output
-                {"capitalInvestment","3","d63","formula", "output"},
-                {"electricityCapacity","3","d65","formula", "output"},
-                {"simplePayback","4","k7","formula", "output"}
+                {"capitalInvestment","1","c13","formula", "output"},
+                {"electricityCapacity","1","c14","formula", "output"},
+                {"simplePayback","1","c15","formula", "output"}
 
         };
         return array;

@@ -44,23 +44,23 @@
 
                Number of zero-grazed dairy cows  :
                <span id="zeroGrazedCowsValue">0</span>
-               <input id="zeroGrazedCows" type="text" data-slider="true" data-slider-range="11,2000">
+               <input id="zeroGrazedCows" type="text" data-slider="true" data-slider-range="0,900">
 
                Number of summer grazed dairy cows :
                <span id="summerGrazedCowsValue">0</span>
-               <input id="summerGrazedCows" type="text" data-slider="true" data-slider-range="11,2000">
+               <input id="summerGrazedCows" type="text" data-slider="true" data-slider-range="0,900">
 
                Area of Maize Silage :
                <span id="maizeSilageAreaValue">0</span>
-               <input id="maizeSilageArea" type="text" data-slider="true" data-slider-range="11,2000">
+               <input id="maizeSilageArea" type="text" data-slider="true" data-slider-range="0,300">
 
                Current farm electricty bill :
                <span id="currentElectricityBillValue">0</span>
-               <input id="currentElectricityBill" type="text" data-slider="true" data-slider-range="11,2000">
+               <input id="currentElectricityBill" type="text" data-slider="true" data-slider-range="0,45000">
 
                On-farm heating bill to be displaced :
                <span id="heatingBillToBeDisplacedValue">0</span>
-               <input id="heatingBillToBeDisplaced" type="text" data-slider="true" data-slider-range="11,2000">
+               <input id="heatingBillToBeDisplaced" type="text" data-slider="true" data-slider-range="0,15000">
 
          </td>
          <td>
