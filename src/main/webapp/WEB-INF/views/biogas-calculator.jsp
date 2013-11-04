@@ -9,8 +9,11 @@
 
     <script src="<c:url value='/resources/js/jquery-1.10.2.js' />"></script>
 
-    <script src="<c:url value='https://www.google.com/jsapi' />"></script>
-    <script src="<c:url value='/resources/js/biogas/biogas-chart.js' />"></script>
+    <script type="text/javascript" src="//www.google.com/jsapi"></script>
+        <script type="text/javascript">
+          google.load("visualization", "1", {packages:["corechart"]});
+        </script>
+
 
     <script src="<c:url value='/resources/js/simple-slider.js' />"></script>
     <link href="<c:url value='/resources/css/simple-slider.css' />" rel="stylesheet" type="text/css" />
@@ -97,13 +100,9 @@
   <p>A part of BioEN project</p>
   </footer>
 
-
-
-
-
-
-
    <script src="<c:url value='/resources/js/biogas/biogas-calculator.js' />"></script>
+   <script src="<c:url value='/resources/js/biogas/biogas-chart-data.js' />"></script>
+   <script src="<c:url value='/resources/js/biogas/biogas-chart.js' />"></script>
 
 </body>
 </html>

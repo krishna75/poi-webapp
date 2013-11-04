@@ -1,6 +1,7 @@
-google.load("visualization", "1", {packages:["corechart"]});
-             google.setOnLoadCallback(drawChart);
-             function drawChart() {
+function drawBiogasCharts(){
+console.log("Creating Charts");
+drawLivestockPieChart();
+
                var data = google.visualization.arrayToDataTable([
                  ['Year', 'Sales', 'Ex'],
                  ['2004',  1000,      400],
@@ -12,37 +13,26 @@ google.load("visualization", "1", {packages:["corechart"]});
                var options = {
                  title: 'Company Performance'
                };
+var chart = new google.visualization.LineChart(document.getElementById('chart1'));
 
-               var chart = new google.visualization.LineChart(document.getElementById('chart1'));
                chart.draw(data, options);
 
 
 
 
-               var dataPie = google.visualization.arrayToDataTable([
-                         ['Task', 'Hours per Day'],
-                         ['Work',     11],
-                         ['Eat',      2],
-                         ['Commute',  2],
-                         ['Watch TV', 2],
-                         ['Sleep',    7]
-                       ]);
+            var optionsCol = {
+                 title: 'Company Performance',
+                 hAxis: {title: 'Year', titleTextStyle: {color: 'red'}}
+            };
 
-                       var optionsPie = {
-                         title: 'My Daily Activities'
-                       };
+var chartCol = new google.visualization.ColumnChart(document.getElementById('chart2'));
+               chartCol.draw(google.visualization.arrayToDataTable(livestockData()), optionsCol);
+  }
 
-                       var chartPie = new google.visualization.PieChart(document.getElementById('chart3'));
-                       chartPie.draw(dataPie, options);
-
-
-               var optionsCol = {
-                         title: 'Company Performance',
-                         hAxis: {title: 'Year', titleTextStyle: {color: 'red'}}
-                       };
-
-               var chartCol = new google.visualization.ColumnChart(document.getElementById('chart2'));
-               chartCol.draw(dataPie, optionsCol);
-             }
-
-
+function drawLivestockPieChart(){
+              var optionsPie = {
+                title: 'Livestock Biomass Chart'
+              };
+              var chartPie = new google.visualization.PieChart(document.getElementById('chart3'));
+              chartPie.draw(google.visualization.arrayToDataTable(livestockData()), optionsPie);
+}

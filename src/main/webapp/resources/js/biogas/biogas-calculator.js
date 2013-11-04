@@ -5,12 +5,14 @@ var  maizeSilageArea = 1;
 var  currentElectricityBill = 1;
 var  heatingBillToBeDisplaced = 1;
 
-/* Output variables */
-var capitalInvestment = 1 ;
-var electricityCapacity = 1 ;
-var simplePayback = 1 ;
+/* Output json */
+var biogasJson = eval("({\"name\":\"biogas\"})" );
 
-/* Events and actions */
+
+
+/*******************   EVENTS AND ACTIONS  ************************/
+
+
 $("#zeroGrazedCows").bind("slider:changed", function (event, data) {
      zeroGrazedCows = Math.round(data.value);
      $("#zeroGrazedCowsValue").text(zeroGrazedCows);
@@ -54,15 +56,17 @@ function update(){
      .done(function(outputData){
         console.log("response json = "+outputData);
 
-        var biogasJson = jQuery.parseJSON( outputData );
-        capitalInvestment = biogasJson.capitalInvestment;
-        electricityCapacity = biogasJson.electricityCapacity;
-        simplePayback = biogasJson.simplePayback;
+        biogasJson = jQuery.parseJSON( outputData );
 
-        $("#capitalInvestment").text( capitalInvestment);
-        $("#electricityCapacity").text( electricityCapacity);
-        $("#simplePayback").text( simplePayback);
+        //output variables
+        $("#capitalInvestment").text( biogasJson.capitalInvestment);
+        $("#electricityCapacity").text( biogasJson.electricityCapacity);
+        $("#simplePayback").text( biogasJson.simplePayback);
+
+        // create charts
+          drawBiogasCharts();
      });
+
 }
 
 
@@ -99,3 +103,9 @@ function Map(key,value){
 }
 function getMapKey(){return this.key;}
 function getMapValue(){ return  this.value;}
+
+
+
+
+
+

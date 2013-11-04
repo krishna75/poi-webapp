@@ -53,8 +53,8 @@ public class HomeController {
                 {"simplePayback","1","c15","formula", "output"},
 
                 //pie chart: farm area
-                {"permanentPastureArea","1","b11","number", "output"},
-                {"unAllocatedArea","1","b23","formula", "output"},
+                {"permanentPastureArea","0","b11","number", "output"},
+                {"unAllocatedArea","0","b23","formula", "output"},
 
                 //stack chart: Operation Costs
                 {"maintenanceAndOperationCost","3","f102","formula", "output"},
