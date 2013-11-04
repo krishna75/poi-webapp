@@ -67,9 +67,9 @@ public class ExcelReader {
         return  getValue(getCell(sheetIndex,rowIndex,columnIndex));
     }
 
-    public int getCellValueNumber(int sheetIndex, String cellId) {
+    public double getCellValueNumber(int sheetIndex, String cellId) {
         double doubleValue = Double.parseDouble(getValue(getCell(sheetIndex, cellId)));
-        return (int) doubleValue;
+        return  doubleValue;
     }
 
     public String getCellValueString(int sheetIndex, String cellId) {

@@ -70,7 +70,7 @@ public class BiogasManager {
             String sheetIndex = varCellMapping[1];
             String cellId = varCellMapping[2];
 
-            int value = excelReader.getCellValueNumber(Integer.parseInt(sheetIndex), cellId);
+            double value = excelReader.getCellValueNumber(Integer.parseInt(sheetIndex), cellId);
             String variable = varCellMapping[0];
 
             map.put(variable, value);

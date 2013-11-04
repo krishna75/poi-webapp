@@ -36,7 +36,7 @@ function drawCashFlowChart(){
               var options = {
                 title: 'Cash Flow Chart'
               };
-              var chart = new google.visualization.ColumnChart(document.getElementById('chart4'));
+              var chart = new google.visualization.AreaChart(document.getElementById('chart4'));
               chart.draw(google.visualization.arrayToDataTable(cashFlowData()), options);
 }
 
