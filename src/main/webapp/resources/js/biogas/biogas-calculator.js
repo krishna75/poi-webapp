@@ -8,7 +8,7 @@ var  heatingBillToBeDisplaced = 1;
 /* Output json */
 var biogasJson = eval("({\"name\":\"biogas\"})" );
 
-
+update();
 
 /*******************   EVENTS AND ACTIONS  ************************/
 

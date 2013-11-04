@@ -19,15 +19,27 @@ function cropAreaData() {
 
 function operatingCostData() {
      return [
-               ['Operation', 'Cost (£/yr)'],
-               ['Maintenance and Operation',     parseInt(biogasJson.maintenanceAndOperationCost)],
-               ['Annual Energy Crop Cost',   parseInt(biogasJson.annualEnergyCropCost)],
-               ['Value of Displayed Electricity',   parseInt(biogasJson.valueOfDispatchedElectricity)],
-               ['Income from Export Tariff',   parseInt(biogasJson.incomeFromExportTariff)],
-               ['Income from Generation Tariff',   parseInt(biogasJson.incomeFromGenerationTariff)],
-               ['Displayed Heating Cost',   parseInt(biogasJson.displayedHeatingCost)],
-               ['RHI Payment',   parseInt(biogasJson.rhiPayment)]
-
+               [
+                   'Data',
+                   'Maintenance and Operation',
+                   'Annual Energy Crop Cost',
+                   'Value of Displayed Electricity',
+                   'Income from Export Tariff',
+                   'Income from Generation Tariff',
+                   'Displayed Heating Cost',
+                   'RHI Payment'
+               ],
+               [
+                    1,
+                    parseInt(biogasJson.maintenanceAndOperationCost),
+                    parseInt(biogasJson.annualEnergyCropCost),
+                    parseInt(biogasJson.valueOfDispatchedElectricity),
+                    parseInt(biogasJson.incomeFromExportTariff),
+                    parseInt(biogasJson.incomeFromGenerationTariff),
+                    parseInt(biogasJson.displayedHeatingCost),
+                    parseInt(biogasJson.rhiPayment)
+                ],
+                [1.5,0,0,0,0,0,0,0]
      ];
 }
 
@@ -55,7 +67,6 @@ function cashFlowData() {
 
 
 function sensitivityAnalysisData() {
-    console.log("data test : "+biogasJson.cropYield_10);
      return [
                ['Sensitivity Table', 'Crop Yield', 'Electricity Price', 'Cost of Energy Crop'],
                [-10, parseFloat(biogasJson.cropYield_10), parseFloat(biogasJson.electricityPrice_10), parseFloat(biogasJson.costOfEnergyCrop_10) ],

@@ -57,7 +57,7 @@
                <span id="maizeSilageAreaValue">0</span>
                <input id="maizeSilageArea" type="text" data-slider="true" data-slider-range="0,300">
 
-               Current farm electricty bill :
+               Current farm electricity bill :
                <span id="currentElectricityBillValue">0</span>
                <input id="currentElectricityBill" type="text" data-slider="true" data-slider-range="0,45000">
 
