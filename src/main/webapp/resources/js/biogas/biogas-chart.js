@@ -4,6 +4,7 @@ function drawBiogasCharts(){
     drawCropAreaPieChart();
     drawOperatingCostChart();
     drawCashFlowChart();
+    drawSensitivityAnalysisChart();
 }
 
 function drawLivestockPieChart(){
@@ -37,4 +38,12 @@ function drawCashFlowChart(){
               };
               var chart = new google.visualization.ColumnChart(document.getElementById('chart4'));
               chart.draw(google.visualization.arrayToDataTable(cashFlowData()), options);
+}
+
+function drawSensitivityAnalysisChart(){
+              var options = {
+                title: 'Sensitivity Analysis Chart'
+              };
+              var chart = new google.visualization.LineChart(document.getElementById('chart5'));
+              chart.draw(google.visualization.arrayToDataTable(sensitivityAnalysisData()), options);
 }

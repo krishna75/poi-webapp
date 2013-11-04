@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f97d80ea-37bd-4c6c-9986-60f804109998" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-calculator.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-calculator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-chart-data.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-chart-data.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-chart.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-chart.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bioen.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1383567566139" ignored="false" />
+    <file path="/Dummy.txt" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1383569647501" ignored="false" />
     <file path="/ExcelReader.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382700075318" ignored="false" />
     <file path="/ExcelReaderTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382700168458" ignored="false" />
     <file path="/fragment.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382608826722" ignored="false" />
@@ -41,8 +39,8 @@
     <file path="/BaseTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382699010745" ignored="false" />
     <file path="/biogas-calculator.css" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1383312084295" ignored="false" />
     <file path="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/biogas_002dcalculator_jsp.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1382705198966" ignored="false" />
-    <file path="/biogas-chart.js" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1383569545206" ignored="false" />
-    <file path="/biogas-chart-data.js" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1383569331186" ignored="false" />
+    <file path="/biogas-chart.js" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1383572302561" ignored="false" />
+    <file path="/biogas-chart-data.js" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1383571892027" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,19 +119,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="biogas-chart-data.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="biogas-chart-data.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-chart-data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="8" selection-start="2415" selection-end="2415" vertical-scroll-proportion="0.0">
+            <state line="36" column="113" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.160697">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="biogas-chart.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="biogas-chart.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-chart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="60" selection-start="815" selection-end="815" vertical-scroll-proportion="0.40201005">
+            <state line="46" column="92" selection-start="1719" selection-end="1719" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,7 +140,7 @@
       <file leaf-file-name="HomeController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="89" selection-start="2949" selection-end="2949" vertical-scroll-proportion="0.0">
+            <state line="43" column="34" selection-start="1503" selection-end="1511" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1274,7 +1272,11 @@
       <created>1383567573637</created>
       <updated>1383567573637</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="four graphs implemented 1) livestock vs biomass 2) crop area 3) operating cost 4) cash flow">
+      <created>1383569653882</created>
+      <updated>1383569653882</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1291,11 +1293,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295562" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32577905" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24834438" sideWeight="0.075542964" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18653421" sideWeight="0.58829087" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16721854" sideWeight="0.12842304" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07671082" sideWeight="0.58829087" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24834438" sideWeight="0.51180357" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41170916" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16721854" sideWeight="0.87063265" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41170916" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1285872" sideWeight="0.68932956" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1346,7 +1348,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial implementation of working with graphs with live data" />
+    <option name="LAST_COMMIT_MESSAGE" value="four graphs implemented 1) livestock vs biomass 2) crop area 3) operating cost 4) cash flow" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1360,7 +1362,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="some other types of cell values covered&#10;" />
     <MESSAGE value="now the getOutput works in the controller and the model&#10;" />
     <MESSAGE value="tidy up and attempt to update workbook on update on some cells&#10;" />
     <MESSAGE value="works with updating the sheet, but the web app throws null pointer exception&#10;&#10;" />
@@ -1385,6 +1386,7 @@
     <MESSAGE value="not updating formula cell was because I was using a wrong cell as input, now fixed" />
     <MESSAGE value="added some graph related variables to the controller" />
     <MESSAGE value="initial implementation of working with graphs with live data" />
+    <MESSAGE value="four graphs implemented 1) livestock vs biomass 2) crop area 3) operating cost 4) cash flow" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1468,15 +1470,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="89" selection-start="2949" selection-end="2949" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/dao/ExcelReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="123" column="0" selection-start="4004" selection-end="4004" vertical-scroll-proportion="0.3910939">
@@ -1498,16 +1491,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-chart-data.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="8" selection-start="2415" selection-end="2415" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="43" column="34" selection-start="1503" selection-end="1511" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-chart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="60" selection-start="815" selection-end="815" vertical-scroll-proportion="0.40201005">
+        <state line="46" column="92" selection-start="1719" selection-end="1719" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/biogas/biogas-chart-data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="113" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.160697">
           <folding />
         </state>
       </provider>
