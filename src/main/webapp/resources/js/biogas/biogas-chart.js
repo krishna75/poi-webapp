@@ -1,38 +1,40 @@
 function drawBiogasCharts(){
-console.log("Creating Charts");
-drawLivestockPieChart();
-
-               var data = google.visualization.arrayToDataTable([
-                 ['Year', 'Sales', 'Ex'],
-                 ['2004',  1000,      400],
-                 ['2005',  1170,      460],
-                 ['2006',  660,       1120],
-                 ['2007',  1030,      540]
-               ]);
-
-               var options = {
-                 title: 'Company Performance'
-               };
-var chart = new google.visualization.LineChart(document.getElementById('chart1'));
-
-               chart.draw(data, options);
-
-
-
-
-            var optionsCol = {
-                 title: 'Company Performance',
-                 hAxis: {title: 'Year', titleTextStyle: {color: 'red'}}
-            };
-
-var chartCol = new google.visualization.ColumnChart(document.getElementById('chart2'));
-               chartCol.draw(google.visualization.arrayToDataTable(livestockData()), optionsCol);
-  }
+    console.log("Creating Charts ... ");
+    drawLivestockPieChart();
+    drawCropAreaPieChart();
+    drawOperatingCostChart();
+    drawCashFlowChart();
+}
 
 function drawLivestockPieChart(){
-              var optionsPie = {
+              var options = {
                 title: 'Livestock Biomass Chart'
               };
-              var chartPie = new google.visualization.PieChart(document.getElementById('chart3'));
-              chartPie.draw(google.visualization.arrayToDataTable(livestockData()), optionsPie);
+              var chart = new google.visualization.PieChart(document.getElementById('chart1'));
+              chart.draw(google.visualization.arrayToDataTable(livestockData()), options);
+}
+
+function drawCropAreaPieChart(){
+              var options = {
+                title: 'Crop Area Chart'
+              };
+              var chart = new google.visualization.PieChart(document.getElementById('chart2'));
+              chart.draw(google.visualization.arrayToDataTable(cropAreaData()), options);
+}
+
+
+function drawOperatingCostChart(){
+              var options = {
+                title: 'Operating Cost Chart'
+              };
+              var chart = new google.visualization.ColumnChart(document.getElementById('chart3'));
+              chart.draw(google.visualization.arrayToDataTable(operatingCostData()), options);
+}
+
+function drawCashFlowChart(){
+              var options = {
+                title: 'Cash Flow Chart'
+              };
+              var chart = new google.visualization.ColumnChart(document.getElementById('chart4'));
+              chart.draw(google.visualization.arrayToDataTable(cashFlowData()), options);
 }

@@ -54,9 +54,8 @@ function update(){
          contentType:"application/json; charset=utf-8",
      })
      .done(function(outputData){
-        console.log("response json = "+outputData);
-
         biogasJson = jQuery.parseJSON( outputData );
+        console.log("biogas json size : " + Object.keys(biogasJson).length);
 
         //output variables
         $("#capitalInvestment").text( biogasJson.capitalInvestment);
