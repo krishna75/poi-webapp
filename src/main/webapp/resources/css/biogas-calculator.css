@@ -1,12 +1,36 @@
 
+h1, h2, h3 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;;
+  color: white;
+  padding: 10 15 10 15;
+
+  background: rgba(117,137,12,1);
+  background: -moz-linear-gradient(left, rgba(117,137,12,1) 1%, rgba(135,153,41,1) 35%, rgba(158,174,78,1) 79%, rgba(164,179,87,1) 90%);
+  background: -webkit-gradient(left top, right top, color-stop(1%, rgba(117,137,12,1)), color-stop(35%, rgba(135,153,41,1)), color-stop(79%, rgba(158,174,78,1)), color-stop(90%, rgba(164,179,87,1)));
+  background: -webkit-linear-gradient(left, rgba(117,137,12,1) 1%, rgba(135,153,41,1) 35%, rgba(158,174,78,1) 79%, rgba(164,179,87,1) 90%);
+  background: -o-linear-gradient(left, rgba(117,137,12,1) 1%, rgba(135,153,41,1) 35%, rgba(158,174,78,1) 79%, rgba(164,179,87,1) 90%);
+  background: -ms-linear-gradient(left, rgba(117,137,12,1) 1%, rgba(135,153,41,1) 35%, rgba(158,174,78,1) 79%, rgba(164,179,87,1) 90%);
+  background: linear-gradient(to right, rgba(117,137,12,1) 1%, rgba(135,153,41,1) 35%, rgba(158,174,78,1) 79%, rgba(164,179,87,1) 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75890c', endColorstr='#a4b357', GradientType=1 );
+}
+
+.header {
+    background: white;
+}
+
+
+.logo{
+    width:75px;
+}
 .formContent{
   margin-left:25px;
 }
 
 .output{
+    font-size: 16px;
     width:200px;
     height:50px;
-    background-color:#CCFFFF;
+    background-color: light-green;
     border:1px solid gray;
     border-radius: 5px;
     padding : 0px 15px 0px 15px;
@@ -27,7 +51,10 @@
 
 
 body {
-  font: 10px sans-serif;
+  font: 10px arial;
+
+  background-image:url("../images/cows.jpg");
+
 }
 
 .axis path,

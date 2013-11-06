@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <html>
 <head>
     <title>BioEN FIT Calculator</title>
@@ -29,23 +30,23 @@
           });
     </script>
 </head>
-<body>
-   <img src="<c:url value='/resources/images/bcu.png' />" />
-   <img src="<c:url value='/resources/images/aston_business.png' />" />
-   <img src="<c:url value='/resources/images/ebri.png' />" />
-   <img src="<c:url value='/resources/images/investor_people.png' />" />
-   <img src="<c:url value='/resources/images/greenwatt.png' />" />
-   <img src="<c:url value='/resources/images/bioen.png' />" />
-   <img src="<c:url value='/resources/images/nwe.png' />" />
+<body >
+<div class="header">
+   <img class="logo" src="<c:url value='/resources/images/bcu.png' />" />
+   <img class="logo" src="<c:url value='/resources/images/aston_business.png' />" />
+   <img class="logo" src="<c:url value='/resources/images/ebri.png' />" />
+   <img class="logo" src="<c:url value='/resources/images/investor_people.png' />" />
+   <img class="logo" src="<c:url value='/resources/images/greenwatt.png' />" />
+   <img class="logo" src="<c:url value='/resources/images/bioen.png' />" />
+   <img class="logo" src="<c:url value='/resources/images/nwe.png' />" />
+</div>
    <h1>${message}</h1>
-   <hr/>
-
    <div class="formContent" >
        <table>
        <tr>
            <td>
 
-               Number of zero-grazed dairy cows  :
+               <span class="label">  Number of zero-grazed dairy cows  :
                <span id="zeroGrazedCowsValue">0</span>
                <input id="zeroGrazedCows" type="text" data-slider="true" data-slider-range="0,900">
 
@@ -65,17 +66,19 @@
                <span id="heatingBillToBeDisplacedValue">0</span>
                <input id="heatingBillToBeDisplaced" type="text" data-slider="true" data-slider-range="0,15000">
 
+               </span>
          </td>
          <td>
-
-               <div class="output-block">  Capital Investment : <span id="capitalInvestment" class="output"> 0 </span> </div>
-               <div class="output-block">  Electrical Capacity: <span id="electricityCapacity" class="output">0 </span> </div>
-               <div class="output-block"> Simple Payback: <span id="simplePayback" class="output">0 </span> </div>
+                 <span class="label">
+                 <div class="output-block"> <span class="label"> Capital Investment :</span> <span id="capitalInvestment" class="output"> 0 </span> </div>
+                 <div class="output-block"> <span class="label"> Electrical Capacity:</span> <span id="electricityCapacity" class="output">0 </span> </div>
+                 <div class="output-block"> <span class="label">Simple Payback:</span> <span id="simplePayback" class="output">0 </span> </div>
+                 </span>
 
         </td>
-
-
         <td>
+            <div id="chart3"></div>
+        </td>
     </tr>
     <tr>
          <td>
@@ -86,7 +89,7 @@
               <div id="chart2"></div>
           </td>
           <td>
-              <div id="chart3"></div>
+
           </td>
     </tr>
      <tr>
