@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f97d80ea-37bd-4c6c-9986-60f804109998" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/ID118320.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_opencsv_opencsv_2_3.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/dao/VarCellMappingsReader.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/dao/VarCellMappingsReaderTest.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/excel-cells-test.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/BaseTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/BaseTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/service/BiogasManagerTest.java" afterPath="$PROJECT_DIR$/src/test/java/uk/ac/bcu/kbe/bioen/service/BiogasManagerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/webapp/controller/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bioen.iml" afterPath="$PROJECT_DIR$/bioen.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/biogas-calculator.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/biogas-calculator.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/biogas-calculator.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bioen.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1384158583585" ignored="false" />
+    <file path="/Dummy.txt" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1384182185671" ignored="false" />
     <file path="/ExcelReader.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1383574100081" ignored="false" />
     <file path="/ExcelReaderTest.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1383574284862" ignored="false" />
     <file path="/fragment.java" changelist="f97d80ea-37bd-4c6c-9986-60f804109998" time="1384180081051" ignored="false" />
@@ -146,7 +137,7 @@
       <file leaf-file-name="VarCellMappingsReader.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/dao/VarCellMappingsReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="42" selection-start="1252" selection-end="1252" vertical-scroll-proportion="0.41899443">
+            <state line="37" column="39" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.44273743">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1192,7 +1183,11 @@
       <created>1383746968984</created>
       <updated>1383746968984</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="some more css fiddling: header, label, font and background">
+      <created>1384182252653</created>
+      <updated>1384182252653</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1213,7 +1208,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14648977" sideWeight="0.72049105" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16694306" sideWeight="0.53257793" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27950898" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27950898" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1285872" sideWeight="0.68932956" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1421,7 +1416,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uk/ac/bcu/kbe/bioen/dao/VarCellMappingsReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="42" selection-start="1252" selection-end="1252" vertical-scroll-proportion="0.41899443">
+        <state line="37" column="39" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.44273743">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
