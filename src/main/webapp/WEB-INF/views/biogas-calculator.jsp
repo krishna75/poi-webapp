@@ -82,15 +82,18 @@
     </tr>
     <tr>
          <td>
-
              <div id="chart1"></div>
           </td>
           <td>
               <div id="chart2"></div>
           </td>
           <td>
-
+             <div id="chart7"></div>
           </td>
+          <td>
+              <div id="chart8"></div>
+          </td>
+
     </tr>
      <tr>
              <td>

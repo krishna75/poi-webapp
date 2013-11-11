@@ -1,6 +1,5 @@
 package uk.ac.bcu.kbe.bioen.service;
 
-import org.json.simple.JSONObject;
 import org.junit.Before;
 import org.junit.Test;
 import uk.ac.bcu.kbe.bioen.BaseTest;
@@ -22,7 +21,7 @@ public class BiogasManagerTest extends BaseTest {
 
     @Before
     public void initialize() throws IOException {
-        manager = new BiogasManager(new ExcelReader(filename),variableCellMappings);
+        manager = new BiogasManager(new ExcelReader(excelFilename),variableCellMappings);
     }
 
     @Test

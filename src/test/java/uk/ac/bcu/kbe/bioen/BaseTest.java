@@ -9,7 +9,8 @@ package uk.ac.bcu.kbe.bioen;
  */
 public class BaseTest {
 
-    protected final String filename = this.getClass().getClassLoader().getResource("biogas-test.xlsx").getFile();
+    protected final String excelFilename = this.getClass().getClassLoader().getResource("biogas-test.xlsx").getFile();
+    protected final String excelCellsFilename = this.getClass().getClassLoader().getResource("excel-cells-test.csv").getFile();
     protected final String[][] variableCellMappings = {
                 {"cows","0","d4","number","input"},
                 {"area","0","d5","number","input"},

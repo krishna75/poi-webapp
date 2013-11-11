@@ -153,7 +153,6 @@ public class HomeController {
                 {"costOfEnergyCrop8","4","m45","formula", "output"},
                 {"costOfEnergyCrop9","4","m46","formula", "output"},
                 {"costOfEnergyCrop10","4","m47","formula", "output"}
-
         };
         return array;
     }

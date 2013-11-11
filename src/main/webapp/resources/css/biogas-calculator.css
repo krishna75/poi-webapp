@@ -1,5 +1,6 @@
 
 h1, h2, h3 {
+  text-shadow: 3px 3px 7px rgba(8, 13, 0, 0.84);
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;;
   color: white;
   padding: 10 15 10 15;
@@ -43,7 +44,12 @@ h1, h2, h3 {
 }
 
 
-#chart1, #chart2, #chart3, #chart4, #chart5 {
+#chart1, #chart2 {
+  height: 150px;
+  width: 250px;
+}
+
+ #chart3, #chart4, #chart5 {
   height: 250px;
   width: 400px;
 }
