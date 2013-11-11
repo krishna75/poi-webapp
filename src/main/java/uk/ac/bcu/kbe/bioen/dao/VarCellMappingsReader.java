@@ -2,6 +2,8 @@ package uk.ac.bcu.kbe.bioen.dao;
 
 import au.com.bytecode.opencsv.CSVReader;
 import com.google.common.collect.Lists;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -14,7 +16,7 @@ import java.util.List;
  * Time: 13:50
  */
 public class VarCellMappingsReader {
-
+    private Logger log = LoggerFactory.getLogger(this.getClass());
     private final String filename;
     private List<VarCellMapping> varCellMappingList;
 
@@ -25,6 +27,7 @@ public class VarCellMappingsReader {
 
     List<VarCellMapping> process(String filename) throws IOException {
         List<VarCellMapping> varCellMappings = Lists.newArrayList();
+        log.info("reading from file:"+filename);
         CSVReader reader = new CSVReader(new FileReader(filename));
         String [] nextLine;
         while ((nextLine = reader.readNext()) != null) {
@@ -35,6 +38,7 @@ public class VarCellMappingsReader {
                         nextLine[4].trim()));
              }
         }
+        log.info("total lines processes = "+varCellMappings.size());
         return varCellMappings;
     }
 
