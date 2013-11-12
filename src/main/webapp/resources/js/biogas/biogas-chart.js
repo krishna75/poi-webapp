@@ -5,6 +5,7 @@ function drawBiogasCharts(){
     drawOperatingCostChart();
     drawCashFlowChart();
     drawSensitivityAnalysisChart();
+    drawSensitivityTable();
 }
 
 function drawLivestockPieChart(){
@@ -61,4 +62,20 @@ function drawSensitivityAnalysisChart(){
               };
               var chart = new google.visualization.LineChart(document.getElementById('chart5'));
               chart.draw(google.visualization.arrayToDataTable(sensitivityAnalysisData()), options);
+}
+function drawSensitivityTable(){
+
+              var data = new google.visualization.DataTable();
+                      data.addColumn('string', 'Name');
+                      data.addColumn('number', 'Salary');
+                      data.addColumn('boolean', 'Full Time Employee');
+                      data.addRows([
+                        ['Mike',  {v: 10000, f: '$10,000'}, true],
+                        ['Jim',   {v:8000,   f: '$8,000'},  false],
+                        ['Alice', {v: 12500, f: '$12,500'}, true],
+                        ['Bob',   {v: 7000,  f: '$7,000'},  true]
+                      ]);
+
+                      var table = new google.visualization.Table(document.getElementById('chart6'));
+                      table.draw(google.visualization.arrayToDataTable(sensitivityTableData()), {showRowNumber: true});
 }

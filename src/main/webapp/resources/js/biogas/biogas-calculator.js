@@ -5,6 +5,15 @@ var  maizeSilageArea = 1;
 var  currentElectricityBill = 1;
 var  heatingBillToBeDisplaced = 1;
 
+//
+var cropYield = 1;
+var costArableCrop = 1;
+var electricityUnitPrice = 1;
+var heatingFuelUnitPrice = 1;
+var exportedElectricityValue = 1.0;
+
+updateDefaultValues();
+
 /* Output json */
 var biogasJson = eval("({\"name\":\"biogas\"})" );
 
@@ -43,10 +52,41 @@ $("#heatingBillToBeDisplaced").bind("slider:changed", function (event, data) {
      update();
 });
 
+$("#cropYield").change(function() {
+     var value = $(this).val();
+     console.log("cropYield = "+value);
+     cropYield= parseInt(value);
+     update();
+});
+$("#costArableCrop").change(function() {
+     var value = $(this).val();
+     console.log("costArableCrop = "+value);
+     costArableCrop= parseInt(value);
+     update();
+});
+$("#electricityUnitPrice").change(function() {
+     var value = $(this).val();
+     console.log("electricityUnitPrice = "+value);
+     electricityUnitPrice= parseInt(value);
+     update();
+});
+$("#heatingFuelUnitPrice").change(function() {
+     var value = $(this).val();
+     console.log("heatingFuelUnitPrice = "+value);
+     heatingFuelUnitPrice= parseInt(value);
+     update();
+});
+$("#exportedElectricityValue").change(function() {
+     var value = $(this).val();
+     console.log("exportedElectricityValue = "+value);
+     exportedElectricityValue= parseInt(value);
+     update();
+});
 
 
 /* Sends and receives info from server in json format*/
 function update(){
+
      $.ajax({
          url:"biogas-json",
          type:"POST",
@@ -76,7 +116,13 @@ function getInputJson(){
         new Map("summerGrazedCows",parseInt(summerGrazedCows)),
         new Map("maizeSilageArea",parseInt(maizeSilageArea)),
         new Map("currentElectricityBill",parseInt(currentElectricityBill)),
-        new Map("heatingBillToBeDisplaced",parseInt(heatingBillToBeDisplaced))
+        new Map("heatingBillToBeDisplaced",parseInt(heatingBillToBeDisplaced)),
+
+        new Map("cropYield",parseInt(cropYield)),
+        new Map("costArableCrop",parseInt(costArableCrop)),
+        new Map("electricityUnitPrice",parseInt(electricityUnitPrice)),
+        new Map("heatingFuelUnitPrice",parseInt(heatingFuelUnitPrice)),
+        new Map("exportedElectricityValue",parseInt(exportedElectricityValue))
     ];
 
     var json = '{';
@@ -105,6 +151,25 @@ function getMapValue(){ return  this.value;}
 
 
 
+ function updateDefaultValues(){
 
+zeroGrazedCows = $("#zeroGrazedCows").val();
+$("#zeroGrazedCowsValue").text(zeroGrazedCows);
+summerGrazedCows = $("#summerGrazedCows").val();
+$("#summerGrazedCowsValue").text(summerGrazedCows);
+maizeSilageArea = $("#maizeSilageArea").val();
+$("#maizeSilageAreaValue").text(maizeSilageArea);
+currentElectricityBill = $("#currentElectricityBill").val();
+$("#currentElectricityBillValue").text(currentElectricityBill);
+heatingBillToBeDisplaced = $("#heatingBillToBeDisplaced").val();
+$("#heatingBillToBeDisplacedValue").text(heatingBillToBeDisplaced);
+
+ cropYield = $("#cropYield").val();
+ costArableCrop = $("#costArableCrop").val();
+ electricityUnitPrice = $("#electricityUnitPrice").val();
+ heatingFuelUnitPrice = $("#heatingFuelUnitPrice").val();
+ exportedElectricityValue = $("#exportedElectricityValue").val();
+
+ }
 
 

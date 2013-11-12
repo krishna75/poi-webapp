@@ -9,12 +9,7 @@
     <link href="<c:url value='/resources/css/bootstrap.css' />" rel="stylesheet" type="text/css">
 
     <script src="<c:url value='/resources/js/jquery-1.10.2.js' />"></script>
-
     <script type="text/javascript" src="//www.google.com/jsapi"></script>
-        <script type="text/javascript">
-          google.load("visualization", "1", {packages:["corechart"]});
-        </script>
-
 
     <script src="<c:url value='/resources/js/simple-slider.js' />"></script>
     <link href="<c:url value='/resources/css/simple-slider.css' />" rel="stylesheet" type="text/css" />
@@ -23,7 +18,8 @@
 
 
     <script type="text/javascript" charset="utf-8">
-
+           google.load("visualization", "1", {packages:["corechart"]});
+           google.load('visualization', '1', {packages:['table']});
 
           $(function(){
             $("input:checkbox, input:radio, input:file, select").uniform();
@@ -48,23 +44,29 @@
 
                <span class="label">  Number of zero-grazed dairy cows  :
                <span id="zeroGrazedCowsValue">0</span>
-               <input id="zeroGrazedCows" type="text" data-slider="true" data-slider-range="0,900">
+               <input id="zeroGrazedCows" type="text" data-slider="true" data-slider-range="0,900" value="500">
 
                Number of summer grazed dairy cows :
                <span id="summerGrazedCowsValue">0</span>
-               <input id="summerGrazedCows" type="text" data-slider="true" data-slider-range="0,900">
+               <input id="summerGrazedCows" type="text" data-slider="true" data-slider-range="0,900" value="200">
 
                Area of Maize Silage :
                <span id="maizeSilageAreaValue">0</span>
-               <input id="maizeSilageArea" type="text" data-slider="true" data-slider-range="0,300">
+               <input id="maizeSilageArea" type="text" data-slider="true" data-slider-range="0,300" value="100">
 
                Current farm electricity bill :
                <span id="currentElectricityBillValue">0</span>
-               <input id="currentElectricityBill" type="text" data-slider="true" data-slider-range="0,45000">
+               <input id="currentElectricityBill" type="text" data-slider="true" data-slider-range="0,45000" value="10000">
 
                On-farm heating bill to be displaced :
                <span id="heatingBillToBeDisplacedValue">0</span>
-               <input id="heatingBillToBeDisplaced" type="text" data-slider="true" data-slider-range="0,15000">
+               <input id="heatingBillToBeDisplaced" type="text" data-slider="true" data-slider-range="0,15000" value="5000">
+
+               Crop Yield (t/ha): <input id="cropYield" type="text" value="35"/> <br/>
+               Cost of arable crop (£/t): <input id="costArableCrop" type="text" value="20"/> <br/>
+               Electricity unit price (p/kWh): <input id="electricityUnitPrice" type="text" value="20"/> <br/>
+               Heating fuel unit price (p/kWh): <input id="heatingFuelUnitPrice" type="text" value="6"/>  <br/>
+               Exported electricity value (p/kWh): <input id="exportedElectricityValue" type="text" value="4.6"/>  <br/>
 
                </span>
          </td>

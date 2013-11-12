@@ -12,7 +12,7 @@ function cropAreaData() {
                ['Crop', 'Area (HA)'],
                ['Permanent Pasture',     parseInt(biogasJson.permanentPastureArea)],
                ['Maize',   parseInt(biogasJson.maizeSilageArea)],
-               ['Un-allocated',   parseInt(biogasJson.unAllocatedArea)]
+               ['Wheat',   parseInt(biogasJson.wheatArea)]
      ];
 }
 
@@ -90,5 +90,23 @@ function sensitivityAnalysisData() {
                [8, parseFloat(biogasJson.cropYield8), parseFloat(biogasJson.electricityPrice8), parseFloat(biogasJson.costOfEnergyCrop8) ],
                [9, parseFloat(biogasJson.cropYield9), parseFloat(biogasJson.electricityPrice9), parseFloat(biogasJson.costOfEnergyCrop9) ],
                [10, parseFloat(biogasJson.cropYield10), parseFloat(biogasJson.electricityPrice10), parseFloat(biogasJson.costOfEnergyCrop10) ]
+     ];
+}
+
+function sensitivityTableData() {
+     var decPlaces = 2;
+     return [
+               ['Percentage Change','-20%','-15%','-10%','-5%','0%','5%','10%','15%','20%'],
+               ['Crop Yield',parseFloat(biogasJson.cropYield_20p).toFixed(decPlaces),parseFloat(biogasJson.cropYield_15p).toFixed(decPlaces),parseFloat(biogasJson.cropYield_10p).toFixed(decPlaces),parseFloat(biogasJson.cropYield_5p).toFixed(decPlaces),parseFloat(biogasJson.cropYield0p).toFixed(decPlaces),parseFloat(biogasJson.cropYield5p).toFixed(decPlaces),parseFloat(biogasJson.cropYield10p).toFixed(decPlaces),parseFloat(biogasJson.cropYield15p).toFixed(decPlaces),parseFloat(biogasJson.cropYield20p).toFixed(decPlaces)],
+               ['Crop Yield Pay Back',parseFloat(biogasJson.cropYieldPayback_20p).toFixed(decPlaces),parseFloat(biogasJson.cropYieldPayback_15p).toFixed(decPlaces),parseFloat(biogasJson.cropYieldPayback_10p).toFixed(decPlaces),parseFloat(biogasJson.cropYieldPayback_5p).toFixed(decPlaces),parseFloat(biogasJson.cropYieldPayback0p).toFixed(decPlaces),parseFloat(biogasJson.cropYieldPayback5p).toFixed(decPlaces),parseFloat(biogasJson.cropYieldPayback10p).toFixed(decPlaces),parseFloat(biogasJson.cropYieldPayback15p).toFixed(decPlaces),parseFloat(biogasJson.cropYieldPayback20p).toFixed(decPlaces)],
+
+               ['Crop Cost',parseFloat(biogasJson.cropCost_20p).toFixed(decPlaces),parseFloat(biogasJson.cropCost_15p).toFixed(decPlaces),parseFloat(biogasJson.cropCost_10p).toFixed(decPlaces),parseFloat(biogasJson.cropCost_5p).toFixed(decPlaces),parseFloat(biogasJson.cropCost0p).toFixed(decPlaces),parseFloat(biogasJson.cropCost5p).toFixed(decPlaces),parseFloat(biogasJson.cropCost10p).toFixed(decPlaces),parseFloat(biogasJson.cropCost15p).toFixed(decPlaces),parseFloat(biogasJson.cropCost20p).toFixed(decPlaces)],
+               ['Crop Cost Pay Back',parseFloat(biogasJson.cropCostPayback_20p).toFixed(decPlaces),parseFloat(biogasJson.cropCostPayback_15p).toFixed(decPlaces),parseFloat(biogasJson.cropCostPayback_10p).toFixed(decPlaces),parseFloat(biogasJson.cropCostPayback_5p).toFixed(decPlaces),parseFloat(biogasJson.cropCostPayback0p).toFixed(decPlaces),parseFloat(biogasJson.cropCostPayback5p).toFixed(decPlaces),parseFloat(biogasJson.cropCostPayback10p).toFixed(decPlaces),parseFloat(biogasJson.cropCostPayback15p).toFixed(decPlaces),parseFloat(biogasJson.cropCostPayback20p).toFixed(decPlaces)],
+
+               ['Electricity Price',parseFloat(biogasJson.electricityPrice_20p).toFixed(decPlaces),parseFloat(biogasJson.electricityPrice_15p).toFixed(decPlaces),parseFloat(biogasJson.electricityPrice_10p).toFixed(decPlaces),parseFloat(biogasJson.electricityPrice_5p).toFixed(decPlaces),parseFloat(biogasJson.electricityPrice0p).toFixed(decPlaces),parseFloat(biogasJson.electricityPrice5p).toFixed(decPlaces),parseFloat(biogasJson.electricityPrice10p).toFixed(decPlaces),parseFloat(biogasJson.electricityPrice15p).toFixed(decPlaces),parseFloat(biogasJson.electricityPrice20p).toFixed(decPlaces)],
+               ['Electricity Price Pay Back',parseFloat(biogasJson.electricityPricePayback_20p).toFixed(decPlaces),parseFloat(biogasJson.electricityPricePayback_15p).toFixed(decPlaces),parseFloat(biogasJson.electricityPricePayback_10p).toFixed(decPlaces),parseFloat(biogasJson.electricityPricePayback_5p).toFixed(decPlaces),parseFloat(biogasJson.electricityPricePayback0p).toFixed(decPlaces),parseFloat(biogasJson.electricityPricePayback5p).toFixed(decPlaces),parseFloat(biogasJson.electricityPricePayback10p).toFixed(decPlaces),parseFloat(biogasJson.electricityPricePayback15p).toFixed(decPlaces),parseFloat(biogasJson.electricityPricePayback20p).toFixed(decPlaces)],
+
+               ['Heating Fuel Price',parseFloat(biogasJson.heatingFuelPrice_20p).toFixed(decPlaces),parseFloat(biogasJson.heatingFuelPrice_15p).toFixed(decPlaces),parseFloat(biogasJson.heatingFuelPrice_10p).toFixed(decPlaces),parseFloat(biogasJson.heatingFuelPrice_5p).toFixed(decPlaces),parseFloat(biogasJson.heatingFuelPrice0p).toFixed(decPlaces),parseFloat(biogasJson.heatingFuelPrice5p).toFixed(decPlaces),parseFloat(biogasJson.heatingFuelPrice10p).toFixed(decPlaces),parseFloat(biogasJson.heatingFuelPrice15p).toFixed(decPlaces),parseFloat(biogasJson.heatingFuelPrice20p).toFixed(decPlaces)],
+               ['Heating FuelPrice Pay Back',parseFloat(biogasJson.heatingFuelPricePayback_20p).toFixed(decPlaces),parseFloat(biogasJson.heatingFuelPricePayback_15p).toFixed(decPlaces),parseFloat(biogasJson.heatingFuelPricePayback_10p).toFixed(decPlaces),parseFloat(biogasJson.heatingFuelPricePayback_5p).toFixed(decPlaces),parseFloat(biogasJson.heatingFuelPricePayback0p).toFixed(decPlaces),parseFloat(biogasJson.heatingFuelPricePayback5p).toFixed(decPlaces),parseFloat(biogasJson.heatingFuelPricePayback10p).toFixed(decPlaces),parseFloat(biogasJson.heatingFuelPricePayback15p).toFixed(decPlaces),parseFloat(biogasJson.heatingFuelPricePayback20p).toFixed(decPlaces)]
      ];
 }

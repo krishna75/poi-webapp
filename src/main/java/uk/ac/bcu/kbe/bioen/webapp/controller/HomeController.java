@@ -16,18 +16,16 @@ import uk.ac.bcu.kbe.bioen.service.BiogasManager;
 import java.io.IOException;
 
 /**
- * Created with IntelliJ IDEA.
- * User: Krishna
+ * User: Krishna Sapkota
  * Date: 12/10/13
  * Time: 11:00
- * To change this template use File | Settings | File Templates.
  */
 @Controller
 
 public class HomeController {
     private Logger log = LoggerFactory.getLogger(this.getClass());
 
-    private final String excelFilename = this.getClass().getClassLoader().getResource("biogas-fit-calculator-v1.0.xlsm").getFile();
+    private final String excelFilename = this.getClass().getClassLoader().getResource("biogas-fit-calculator-v1.1.xlsm").getFile();
     private final String varCellFilename = this.getClass().getClassLoader().getResource("excel-cells.csv").getFile();
     private BiogasManager manager;
 
@@ -36,10 +34,8 @@ public class HomeController {
     }
 
     @RequestMapping(value = "/biogas-calculator", method = RequestMethod.GET)
-
     public String getBiogasCalculator(ModelMap model) {
         model.addAttribute("message", "Bio-Gas FIT Calculator");
-
         return "biogas-calculator";
     }
 

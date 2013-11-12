@@ -1,9 +1,16 @@
 
 zeroGrazedCows,0,b3,number,input
 summerGrazedCows,0,b4,number,input
-maizeSilageArea,0,b13,number,input
+maizeSilageArea,0,b9,number,input
 currentElectricityBill,1,c10,number,input
 heatingBillToBeDisplaced,1,c11,number,input
+
+// situation variables
+cropYield,1,b18,number,input
+costArableCrop,1,b19,number,input
+electricityUnitPrice,1,b20,number,input
+heatingFuelUnitPrice,1,b21,number,input
+exportedElectricityValue,1,b22,number,input
 
 // output
 capitalInvestment,1,c13,formula, output
@@ -11,8 +18,8 @@ electricityCapacity,1,c14,formula, output
 simplePayback,1,c15,formula, output
 
 //pie chart: farm area
-permanentPastureArea,0,b11,number, output
-unAllocatedArea,0,b23,formula, output
+permanentPastureArea,0,b9,number, output
+wheatArea,0,b12,number, output
 
 //stack chart: Operation Costs
 maintenanceAndOperationCost,3,f102,formula, output
@@ -111,3 +118,127 @@ costOfEnergyCrop7,4,m44,formula, output
 costOfEnergyCrop8,4,m45,formula, output
 costOfEnergyCrop9,4,m46,formula, output
 costOfEnergyCrop10,4,m47,formula, output
+
+
+// for sensitivity table
+// Crop yield and payback period
+cropYield_20p,1,b26,formula, output
+cropYield_15p,1,c26,formula, output
+cropYield_10p,1,d26,formula, output
+cropYield_5p,1,e26,formula, output
+cropYield0p,1,f26,formula, output
+cropYield5p,1,g26,formula, output
+cropYield10p,1,h26,formula, output
+cropYield15p,1,i26,formula, output
+cropYield20p,1,j26,formula, output
+
+cropYieldPayback_20p,1,b27,formula, output
+cropYieldPayback_15p,1,c27,formula, output
+cropYieldPayback_10p,1,d27,formula, output
+cropYieldPayback_5p,1,e27,formula, output
+cropYieldPayback0p,1,f27,formula, output
+cropYieldPayback5p,1,g27,formula, output
+cropYieldPayback10p,1,h27,formula, output
+cropYieldPayback15p,1,i27,formula, output
+cropYieldPayback20p,1,j27,formula, output
+
+
+// crop cost and payback period
+cropCost_20p,1,b28,formula, output
+cropCost_15p,1,c28,formula, output
+cropCost_10p,1,d28,formula, output
+cropCost_5p,1,e28,formula, output
+cropCost0p,1,f28,formula, output
+cropCost5p,1,g28,formula, output
+cropCost10p,1,h28,formula, output
+cropCost15p,1,i28,formula, output
+cropCost20p,1,j28,formula, output
+
+cropCostPayback_20p,1,b29,formula, output
+cropCostPayback_15p,1,c29,formula, output
+cropCostPayback_10p,1,d29,formula, output
+cropCostPayback_5p,1,e29,formula, output
+cropCostPayback0p,1,f29,formula, output
+cropCostPayback5p,1,g29,formula, output
+cropCostPayback10p,1,h29,formula, output
+cropCostPayback15p,1,i29,formula, output
+cropCostPayback20p,1,j29,formula, output
+
+// electricity price and payback period
+electricityPrice_20p,1,b30,formula, output
+electricityPrice_15p,1,c30,formula, output
+electricityPrice_10p,1,d30,formula, output
+electricityPrice_5p,1,e30,formula, output
+electricityPrice0p,1,f30,formula, output
+electricityPrice5p,1,g30,formula, output
+electricityPrice10p,1,h30,formula, output
+electricityPrice15p,1,i30,formula, output
+electricityPrice20p,1,j30,formula, output
+
+electricityPricePayback_20p,1,b31,formula, output
+electricityPricePayback_15p,1,c31,formula, output
+electricityPricePayback_10p,1,d31,formula, output
+electricityPricePayback_5p,1,e31,formula, output
+electricityPricePayback0p,1,f31,formula, output
+electricityPricePayback5p,1,g31,formula, output
+electricityPricePayback10p,1,h31,formula, output
+electricityPricePayback15p,1,i31,formula, output
+electricityPricePayback20p,1,j31,formula, output
+
+
+// heating fuel price and payback period
+heatingFuelPrice_20p,1,b32,formula, output
+heatingFuelPrice_15p,1,c32,formula, output
+heatingFuelPrice_10p,1,d32,formula, output
+heatingFuelPrice_5p,1,e32,formula, output
+heatingFuelPrice0p,1,f32,formula, output
+heatingFuelPrice5p,1,g32,formula, output
+heatingFuelPrice10p,1,h32,formula, output
+heatingFuelPrice15p,1,i32,formula, output
+heatingFuelPrice20p,1,j32,formula, output
+
+heatingFuelPricePayback_20p,1,b33,formula, output
+heatingFuelPricePayback_15p,1,c33,formula, output
+heatingFuelPricePayback_10p,1,d33,formula, output
+heatingFuelPricePayback_5p,1,e33,formula, output
+heatingFuelPricePayback0p,1,f33,formula, output
+heatingFuelPricePayback5p,1,g33,formula, output
+heatingFuelPricePayback10p,1,h33,formula, output
+heatingFuelPricePayback15p,1,i33,formula, output
+heatingFuelPricePayback20p,1,j33,formula, output
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
